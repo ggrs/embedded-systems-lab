@@ -1,0 +1,148 @@
+\hypertarget{group___ext_int_ldd4__module}{\section{Ext\-Int\-Ldd4 module documentation}
+\label{group___ext_int_ldd4__module}\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_ext_int_ldd4___t_device_data}{Ext\-Int\-Ldd4\-\_\-\-T\-Device\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga1693c80c3b1560249c672ecbb04484cc}{Ext\-Int\-Ldd4\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~0x400\-F\-F0\-C0\-U
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga8783b358df665e3568cd57ea48449719}{Ext\-Int\-Ldd4\-\_\-\-Device\-Data}~((\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$)\hyperlink{group___p_e___types__module_gaa1c23d559daef5bcd3327ca83fb56f5a}{P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-Ext\-Int\-Ldd4\-\_\-\-I\-D))
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga5579cb8b94010961344a9ba2ca4fac53}{Ext\-Int\-Ldd4\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_gab23223167aa471dd8d7239d50b59fc39}{Ext\-Int\-Ldd4\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga3af526cfa02c613a416e8d5cea264c4b}{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga4035aa55e366680133095ea66d277a18}{Ext\-Int\-Ldd4\-\_\-\-On\-Interrupt\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga461cbacc2c4729ebf39acb3439dfb10d}{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-I\-N\-D\-E\-X}~0x07\-U
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_gac712c455525c29f44e0662f58f02006b}{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-M\-A\-S\-K}~0x80\-U
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___ext_int_ldd4__module_gafcc80541a6b65be0fd873487ec812a56}{typedef struct \\*
+\hyperlink{struct_ext_int_ldd4___t_device_data}{Ext\-Int\-Ldd4\-\_\-\-T\-Device\-Data} $\ast$ {\bfseries Ext\-Int\-Ldd4\-\_\-\-T\-Device\-Data\-Ptr}}\label{group___ext_int_ldd4__module_gafcc80541a6b65be0fd873487ec812a56}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___ext_int_ldd4__module_ga957ff91899de7c76cb5df13177134960}{Ext\-Int\-Ldd4\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em This method initializes the associated peripheral(s) and the component internal variables. The method is called automatically as a part of the application initialization code. \end{DoxyCompactList}\item 
+\hypertarget{group___ext_int_ldd4__module_ga95399b81989a099bb7a1c4e0ed77480f}{{\bfseries P\-E\-\_\-\-I\-S\-R} (Ext\-Int\-Ldd4\-\_\-\-Interrupt)}\label{group___ext_int_ldd4__module_ga95399b81989a099bb7a1c4e0ed77480f}
+
+\item 
+bool \hyperlink{group___ext_int_ldd4__module_ga6ec76062456005ea035001124d441a19}{Ext\-Int\-Ldd4\-\_\-\-Get\-Val} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Returns the actual value of the input pin of the component. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___ext_int_ldd4__module_ga5e5afc23d4575c4a062dd514f5f8e846}{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, uint8\-\_\-t Edge)
+\begin{DoxyCompactList}\small\item\em Sets the edge type for this component that generates the interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___ext_int_ldd4__module_ga8783b358df665e3568cd57ea48449719}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-Device\-Data@{Ext\-Int\-Ldd4\-\_\-\-Device\-Data}}
+\index{Ext\-Int\-Ldd4\-\_\-\-Device\-Data@{Ext\-Int\-Ldd4\-\_\-\-Device\-Data}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-Device\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\#define Ext\-Int\-Ldd4\-\_\-\-Device\-Data~(({\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$){\bf P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-Ext\-Int\-Ldd4\-\_\-\-I\-D))}}\label{group___ext_int_ldd4__module_ga8783b358df665e3568cd57ea48449719}
+Device data structure pointer used when auto initialization property is enabled. This constant can be passed as a first parameter to all component's methods. \hypertarget{group___ext_int_ldd4__module_gab23223167aa471dd8d7239d50b59fc39}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Ext\-Int\-Ldd4\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Ext\-Int\-Ldd4\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Ext\-Int\-Ldd4\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Ext\-Int\-Ldd4\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___ext_int_ldd4__module_gab23223167aa471dd8d7239d50b59fc39}
+Get\-Val method of the component Ext\-Int\-Ldd4 is enabled (generated) \hypertarget{group___ext_int_ldd4__module_ga5579cb8b94010961344a9ba2ca4fac53}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Ext\-Int\-Ldd4\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Ext\-Int\-Ldd4\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Ext\-Int\-Ldd4\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Ext\-Int\-Ldd4\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___ext_int_ldd4__module_ga5579cb8b94010961344a9ba2ca4fac53}
+Init method of the component Ext\-Int\-Ldd4 is enabled (generated) \hypertarget{group___ext_int_ldd4__module_ga4035aa55e366680133095ea66d277a18}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-On\-Interrupt\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Ext\-Int\-Ldd4\-\_\-\-On\-Interrupt\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Ext\-Int\-Ldd4\-\_\-\-On\-Interrupt\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Ext\-Int\-Ldd4\-\_\-\-On\-Interrupt\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-On\-Interrupt\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Ext\-Int\-Ldd4\-\_\-\-On\-Interrupt\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___ext_int_ldd4__module_ga4035aa55e366680133095ea66d277a18}
+On\-Interrupt event of the component Ext\-Int\-Ldd4 is enabled (generated) \hypertarget{group___ext_int_ldd4__module_ga461cbacc2c4729ebf39acb3439dfb10d}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-I\-N\-D\-E\-X@{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-I\-N\-D\-E\-X}}
+\index{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-I\-N\-D\-E\-X@{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-I\-N\-D\-E\-X}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-I\-N\-D\-E\-X}]{\setlength{\rightskip}{0pt plus 5cm}\#define Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-I\-N\-D\-E\-X~0x07\-U}}\label{group___ext_int_ldd4__module_ga461cbacc2c4729ebf39acb3439dfb10d}
+Index of the used pin from the port \hypertarget{group___ext_int_ldd4__module_gac712c455525c29f44e0662f58f02006b}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-M\-A\-S\-K@{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-M\-A\-S\-K}}
+\index{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-M\-A\-S\-K@{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-M\-A\-S\-K}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-M\-A\-S\-K~0x80\-U}}\label{group___ext_int_ldd4__module_gac712c455525c29f44e0662f58f02006b}
+Mask of the used pin from the port \hypertarget{group___ext_int_ldd4__module_ga1693c80c3b1560249c672ecbb04484cc}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{Ext\-Int\-Ldd4\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}}
+\index{Ext\-Int\-Ldd4\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{Ext\-Int\-Ldd4\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define Ext\-Int\-Ldd4\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S~0x400\-F\-F0\-C0\-U}}\label{group___ext_int_ldd4__module_ga1693c80c3b1560249c672ecbb04484cc}
+Peripheral base address of a device allocated by the component. This constant can be used directly in P\-D\-D macros. \hypertarget{group___ext_int_ldd4__module_ga3af526cfa02c613a416e8d5cea264c4b}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-Set\-Edge\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Ext\-Int\-Ldd4\-\_\-\-Set\-Edge\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___ext_int_ldd4__module_ga3af526cfa02c613a416e8d5cea264c4b}
+Set\-Edge method of the component Ext\-Int\-Ldd4 is enabled (generated) 
+
+\subsection{Function Documentation}
+\hypertarget{group___ext_int_ldd4__module_ga6ec76062456005ea035001124d441a19}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-Get\-Val@{Ext\-Int\-Ldd4\-\_\-\-Get\-Val}}
+\index{Ext\-Int\-Ldd4\-\_\-\-Get\-Val@{Ext\-Int\-Ldd4\-\_\-\-Get\-Val}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-Get\-Val}]{\setlength{\rightskip}{0pt plus 5cm}bool Ext\-Int\-Ldd4\-\_\-\-Get\-Val (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$}]{Device\-Data\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___ext_int_ldd4__module_ga6ec76062456005ea035001124d441a19}
+
+
+Returns the actual value of the input pin of the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\-Data\-Ptr} & -\/ Device data structure pointer returned by $<$\-Init$>$ method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Returned input value. Possible values\-: $<$false$>$ -\/ logical \char`\"{}0\char`\"{} (Low level) $<$true$>$ -\/ logical \char`\"{}1\char`\"{} (High level) 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{group___ext_int_ldd4__module_ga957ff91899de7c76cb5df13177134960}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-Init@{Ext\-Int\-Ldd4\-\_\-\-Init}}
+\index{Ext\-Int\-Ldd4\-\_\-\-Init@{Ext\-Int\-Ldd4\-\_\-\-Init}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ Ext\-Int\-Ldd4\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-User\-Data} $\ast$}]{User\-Data\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___ext_int_ldd4__module_ga957ff91899de7c76cb5df13177134960}
+
+
+This method initializes the associated peripheral(s) and the component internal variables. The method is called automatically as a part of the application initialization code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em User\-Data\-Ptr} & -\/ Pointer to the R\-T\-O\-S device structure. This pointer will be passed to all events as parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Pointer to the dynamically allocated private structure or N\-U\-L\-L if there was an error. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{group___ext_int_ldd4__module_ga5e5afc23d4575c4a062dd514f5f8e846}{\index{Ext\-Int\-Ldd4 module documentation@{Ext\-Int\-Ldd4 module documentation}!Ext\-Int\-Ldd4\-\_\-\-Set\-Edge@{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge}}
+\index{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge@{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge}!ExtIntLdd4 module documentation@{Ext\-Int\-Ldd4 module documentation}}
+\subsubsection[{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Error} Ext\-Int\-Ldd4\-\_\-\-Set\-Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$}]{Device\-Data\-Ptr, }
+\item[{uint8\-\_\-t}]{Edge}
+\end{DoxyParamCaption}
+)}}\label{group___ext_int_ldd4__module_ga5e5afc23d4575c4a062dd514f5f8e846}
+
+
+Sets the edge type for this component that generates the interrupt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\-Data\-Ptr} & -\/ Device data structure pointer returned by $<$\-Init$>$ method. \\
+\hline
+{\em Edge} & -\/ Edge type\-: 0 -\/ falling edge 1 -\/ rising edge 2 -\/ both edges 3 -\/ low level 4 -\/ high level \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Error code, possible codes\-: E\-R\-R\-\_\-\-O\-K -\/ O\-K E\-R\-R\-\_\-\-R\-A\-N\-G\-E -\/ Value is out of range 
+\end{DoxyItemize}
+\end{DoxyReturn}

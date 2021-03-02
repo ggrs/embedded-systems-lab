@@ -1,0 +1,44 @@
+\hypertarget{_t_u3_8c}{\section{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-T\-U3.c File Reference}
+\label{_t_u3_8c}\index{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-T\-U3.\-c@{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-T\-U3.\-c}}
+}
+
+
+This Timer\-Unit component provides a low level A\-P\-I for unified hardware access across various timer devices using the Prescaler-\/\-Counter-\/\-Compare-\/\-Capture timer structure.  
+
+
+{\ttfamily \#include \char`\"{}Real\-Time\-Ldd1.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\-U3.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O\-\_\-\-Map.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_u3___t_device_data}{T\-U3\-\_\-\-T\-Device\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___t_u3__module_ga5f04a8830cd52a3ffa1678d113f31aee}{\#define {\bfseries A\-V\-A\-I\-L\-A\-B\-L\-E\-\_\-\-E\-V\-E\-N\-T\-S\-\_\-\-M\-A\-S\-K}~(\hyperlink{group___p_e___types__module_gafbe7f4d4e51560399c3bdd0218584533}{L\-D\-D\-\_\-\-T\-Event\-Mask})(\hyperlink{group___p_e___types__module_gae8e6bf9d76916611a08b76f20ceb1ef7}{L\-D\-D\-\_\-\-T\-I\-M\-E\-R\-U\-N\-I\-T\-\_\-\-O\-N\-\_\-\-C\-O\-U\-N\-T\-E\-R\-\_\-\-R\-E\-S\-T\-A\-R\-T})}\label{group___t_u3__module_ga5f04a8830cd52a3ffa1678d113f31aee}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___t_u3__module_ga8889e14cead5539a109b3df37aa9140a}{typedef \hyperlink{struct_t_u3___t_device_data}{T\-U3\-\_\-\-T\-Device\-Data} $\ast$ {\bfseries T\-U3\-\_\-\-T\-Device\-Data\-Ptr}}\label{group___t_u3__module_ga8889e14cead5539a109b3df37aa9140a}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___t_u3__module_gaf601d718c3698e63d9e6fc075aa9222d}{T\-U3\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets interrupt priority, sets pin routing, sets timing, etc. If the property \mbox{[}\char`\"{}\-Enable in init. code\char`\"{}\mbox{]} is set to \char`\"{}yes\char`\"{} value then the device is also enabled (see the description of the \mbox{[}Enable\mbox{]} method). In this case the \mbox{[}Enable\mbox{]} method is not necessary and needn't to be generated. This method can be called only once. Before the second call of Init the \mbox{[}Deinit\mbox{]} must be called first. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___t_u3__module_gad9df81d82c4a6110f91af5db4834c95f}{T\-U3\-\_\-\-Reset\-Counter} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Resets counter. If counter is counting up then it is set to zero. If counter is counting down then counter is updated to the reload value. The method is not available if H\-W doesn't allow resetting of the counter. \end{DoxyCompactList}\item 
+\hypertarget{group___t_u3__module_ga7c756b7afc847d133e01471957921c2e}{{\bfseries P\-E\-\_\-\-I\-S\-R} (T\-U3\-\_\-\-Interrupt)}\label{group___t_u3__module_ga7c756b7afc847d133e01471957921c2e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This Timer\-Unit component provides a low level A\-P\-I for unified hardware access across various timer devices using the Prescaler-\/\-Counter-\/\-Compare-\/\-Capture timer structure. \begin{DoxyVersion}{Version}
+01.\-11 
+\end{DoxyVersion}

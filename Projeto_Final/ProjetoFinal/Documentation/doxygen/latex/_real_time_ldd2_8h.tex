@@ -1,0 +1,53 @@
+\hypertarget{_real_time_ldd2_8h}{\section{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Real\-Time\-Ldd2.h File Reference}
+\label{_real_time_ldd2_8h}\index{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Real\-Time\-Ldd2.\-h@{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Real\-Time\-Ldd2.\-h}}
+}
+
+
+This component \char`\"{}\-Real\-Time\-\_\-\-L\-D\-D\char`\"{} implements a free running counter for time measurement. This Real\-Time component provides a high level A\-P\-I for unified hardware access to various timer devices using the Timer\-Unit component.  
+
+
+{\ttfamily \#include \char`\"{}P\-E\-\_\-\-Types.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\-E\-\_\-\-Error.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\-E\-\_\-\-Const.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O\-\_\-\-Map.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}T\-U4.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Cpu.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_gaf7beb45a4424df4da43f3b45c78a6652}{Real\-Time\-Ldd2\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~0x4003\-A000\-U
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_ga368e4a6b140bc3df3e6e9fd64fc994ce}{Real\-Time\-Ldd2\-\_\-\-Device\-Data}~((\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$)\hyperlink{group___p_e___types__module_gaa1c23d559daef5bcd3327ca83fb56f5a}{P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-Real\-Time\-Ldd2\-\_\-\-I\-D))
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_gafe6afc8bcc1aef4a8d7dc6ecb2793431}{Real\-Time\-Ldd2\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_gaa65175b17bf9ee0d111e971783181cdb}{Real\-Time\-Ldd2\-\_\-\-Reset\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_ga3db29bed456a7f7b95a03acc4c6956ed}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_gaab7097d73e29dae25e5a1c2e283c1e2c}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_ga1535acdd92817c52bf81591f3d41aeb0}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___real_time_ldd2__module_ga0b24feecda4b259a58053e9a4672d2cd}{Real\-Time\-Ldd2\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets interrupt priority, sets pin routing, sets timing, etc. If the property \mbox{[}\char`\"{}\-Enable in init. code\char`\"{}\mbox{]} is set to \char`\"{}yes\char`\"{} value then the device is also enabled (see the description of the \mbox{[}Enable\mbox{]} method). In this case the \mbox{[}Enable\mbox{]} method is not necessary and needn't to be generated. This method can be called only once. Before the second call of Init the \mbox{[}Deinit\mbox{]} must be called first. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___real_time_ldd2__module_gae3be94a12612ec0614698cc7a3c5855a}{Real\-Time\-Ldd2\-\_\-\-Reset} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em This method resets software counter. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___real_time_ldd2__module_ga256d6a82db79299e421b0bac967ab2fb}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, uint16\-\_\-t $\ast$Time\-Ptr)
+\begin{DoxyCompactList}\small\item\em This method returns the time (as a 16-\/bit unsigned integer) in microseconds since the last Reset method call. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___real_time_ldd2__module_ga0ef362beecb2f27b82b32b4b8a28bfcd}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, uint16\-\_\-t $\ast$Time\-Ptr)
+\begin{DoxyCompactList}\small\item\em This method returns the time (as a 16-\/bit unsigned integer) in milliseconds since the last Reset method call. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___real_time_ldd2__module_ga4bb188fa300586aacb0fe28460d8b6a6}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, uint16\-\_\-t $\ast$Time\-Ptr)
+\begin{DoxyCompactList}\small\item\em This method returns the time (as a 16-\/bit unsigned integer) in seconds since the last Reset method call. \end{DoxyCompactList}\item 
+\hypertarget{group___real_time_ldd2__module_ga40969d1d760fbadc1be75a4bca6391b1}{void {\bfseries T\-U4\-\_\-\-On\-Counter\-Restart} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)}\label{group___real_time_ldd2__module_ga40969d1d760fbadc1be75a4bca6391b1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This component \char`\"{}\-Real\-Time\-\_\-\-L\-D\-D\char`\"{} implements a free running counter for time measurement. This Real\-Time component provides a high level A\-P\-I for unified hardware access to various timer devices using the Timer\-Unit component. \begin{DoxyVersion}{Version}
+01.\-01 
+\end{DoxyVersion}

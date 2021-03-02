@@ -1,0 +1,57 @@
+\hypertarget{_e_e241_8c}{\section{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-E\-E241.c File Reference}
+\label{_e_e241_8c}\index{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-E\-E241.\-c@{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-E\-E241.\-c}}
+}
+
+
+Driver for Microchip 24\-\_\-\-A\-A/\-L\-C E\-E\-P\-R\-O\-Ms.  
+
+
+{\ttfamily \#include \char`\"{}E\-E241.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___e_e241__module_gac379aa2a833544e88009bed0e7eefb86}{\#define {\bfseries E\-E241\-\_\-\-I2\-C\-Address}~(0\&E\-E241\-\_\-\-M\-A\-X\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R\-\_\-\-M\-A\-S\-K) /$\ast$ address defined by the A2$|$A1$|$A0 pins $\ast$/}\label{group___e_e241__module_gac379aa2a833544e88009bed0e7eefb86}
+
+\item 
+\hypertarget{group___e_e241__module_gaa30882b7dd52d195d9b682f7af6628ec}{\#define {\bfseries E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-N\-B\-L}~(0x0\-A$<$$<$3)  /$\ast$ control byte high nibble. Typically this is 1010 (shifted by one to the right) $\ast$/}\label{group___e_e241__module_gaa30882b7dd52d195d9b682f7af6628ec}
+
+\item 
+\hypertarget{group___e_e241__module_ga7851878a57a010307c3ff8b85001b8f8}{\#define {\bfseries E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-A\-D\-D\-R}~0        /$\ast$ no additional address bits $\ast$/}\label{group___e_e241__module_ga7851878a57a010307c3ff8b85001b8f8}
+
+\item 
+\hypertarget{group___e_e241__module_ga9226f0b77a422d7ca0ca9e81605904ee}{\#define {\bfseries E\-E241\-\_\-\-B\-A\-N\-K\-\_\-0}~(0$<$$<$2)   /$\ast$ B0 bit (0) inside the C\-T\-R\-L\-\_\-\-B\-Y\-T\-E\-: 1010$|$B0$|$A1$|$A0 $\ast$/}\label{group___e_e241__module_ga9226f0b77a422d7ca0ca9e81605904ee}
+
+\item 
+\hypertarget{group___e_e241__module_gaba8ed89063d584c4b368c5314b769d83}{\#define {\bfseries E\-E241\-\_\-\-B\-A\-N\-K\-\_\-1}~(1$<$$<$2)   /$\ast$ B0 bit (1) inside the C\-T\-R\-L\-\_\-\-B\-Y\-T\-E\-: 1010$|$B0$|$A1$|$A0 $\ast$/}\label{group___e_e241__module_gaba8ed89063d584c4b368c5314b769d83}
+
+\item 
+\hypertarget{group___e_e241__module_ga8ab0312edca14b07d9d0fbe4e5a22298}{\#define {\bfseries E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-B\-Y\-T\-E}~(E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-N\-B\-L$|$E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-A\-D\-D\-R) /$\ast$ 1010$|$B0$|$A1$|$A0 $\ast$/}\label{group___e_e241__module_ga8ab0312edca14b07d9d0fbe4e5a22298}
+
+\item 
+\hypertarget{group___e_e241__module_gac7ed2f4a4c0f7fa0707be1c7bbaca3fa}{\#define {\bfseries E\-E241\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-A\-D\-D\-R}(addr)~( E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-B\-Y\-T\-E$|$((addr$>$$>$8)\&0x07) )}\label{group___e_e241__module_gac7ed2f4a4c0f7fa0707be1c7bbaca3fa}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___e_e241__module_ga1070e81c28997395bd8de6a0a8b995be}{byte {\bfseries E\-E241\-\_\-\-Write\-Byte} (E\-E241\-\_\-\-Address addr, byte data)}\label{group___e_e241__module_ga1070e81c28997395bd8de6a0a8b995be}
+
+\item 
+\hypertarget{group___e_e241__module_ga982afa9536b10db5a0764a56502e8f9c}{byte {\bfseries E\-E241\-\_\-\-Read\-Byte} (E\-E241\-\_\-\-Address addr, byte $\ast$data)}\label{group___e_e241__module_ga982afa9536b10db5a0764a56502e8f9c}
+
+\item 
+\hypertarget{group___e_e241__module_ga80792b51a53bbd97de7dbcd3ff9d86cd}{byte {\bfseries E\-E241\-\_\-\-Read\-Block} (E\-E241\-\_\-\-Address addr, byte $\ast$data, word data\-Size)}\label{group___e_e241__module_ga80792b51a53bbd97de7dbcd3ff9d86cd}
+
+\item 
+\hypertarget{group___e_e241__module_ga5d97e5f8f3f54b1bfa4ae79ca4fd87c2}{byte {\bfseries E\-E241\-\_\-\-Write\-Block\-Page} (E\-E241\-\_\-\-Address addr, byte $\ast$data, word data\-Size)}\label{group___e_e241__module_ga5d97e5f8f3f54b1bfa4ae79ca4fd87c2}
+
+\item 
+\hypertarget{group___e_e241__module_gac6f295c10b0784f21e97ae7456835787}{byte {\bfseries E\-E241\-\_\-\-Write\-Block} (E\-E241\-\_\-\-Address addr, byte $\ast$data, word data\-Size)}\label{group___e_e241__module_gac6f295c10b0784f21e97ae7456835787}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Driver for Microchip 24\-\_\-\-A\-A/\-L\-C E\-E\-P\-R\-O\-Ms. \begin{DoxyVersion}{Version}
+01.\-00 
+\end{DoxyVersion}

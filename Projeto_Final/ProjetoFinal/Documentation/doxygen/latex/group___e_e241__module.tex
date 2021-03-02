@@ -1,0 +1,105 @@
+\hypertarget{group___e_e241__module}{\section{E\-E241 module documentation}
+\label{group___e_e241__module}\index{E\-E241 module documentation@{E\-E241 module documentation}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___e_e241__module_gac379aa2a833544e88009bed0e7eefb86}{\#define {\bfseries E\-E241\-\_\-\-I2\-C\-Address}~(0\&E\-E241\-\_\-\-M\-A\-X\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R\-\_\-\-M\-A\-S\-K) /$\ast$ address defined by the A2$|$A1$|$A0 pins $\ast$/}\label{group___e_e241__module_gac379aa2a833544e88009bed0e7eefb86}
+
+\item 
+\hypertarget{group___e_e241__module_gaa30882b7dd52d195d9b682f7af6628ec}{\#define {\bfseries E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-N\-B\-L}~(0x0\-A$<$$<$3)  /$\ast$ control byte high nibble. Typically this is 1010 (shifted by one to the right) $\ast$/}\label{group___e_e241__module_gaa30882b7dd52d195d9b682f7af6628ec}
+
+\item 
+\hypertarget{group___e_e241__module_ga7851878a57a010307c3ff8b85001b8f8}{\#define {\bfseries E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-A\-D\-D\-R}~0        /$\ast$ no additional address bits $\ast$/}\label{group___e_e241__module_ga7851878a57a010307c3ff8b85001b8f8}
+
+\item 
+\hypertarget{group___e_e241__module_ga9226f0b77a422d7ca0ca9e81605904ee}{\#define {\bfseries E\-E241\-\_\-\-B\-A\-N\-K\-\_\-0}~(0$<$$<$2)   /$\ast$ B0 bit (0) inside the C\-T\-R\-L\-\_\-\-B\-Y\-T\-E\-: 1010$|$B0$|$A1$|$A0 $\ast$/}\label{group___e_e241__module_ga9226f0b77a422d7ca0ca9e81605904ee}
+
+\item 
+\hypertarget{group___e_e241__module_gaba8ed89063d584c4b368c5314b769d83}{\#define {\bfseries E\-E241\-\_\-\-B\-A\-N\-K\-\_\-1}~(1$<$$<$2)   /$\ast$ B0 bit (1) inside the C\-T\-R\-L\-\_\-\-B\-Y\-T\-E\-: 1010$|$B0$|$A1$|$A0 $\ast$/}\label{group___e_e241__module_gaba8ed89063d584c4b368c5314b769d83}
+
+\item 
+\hypertarget{group___e_e241__module_ga8ab0312edca14b07d9d0fbe4e5a22298}{\#define {\bfseries E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-B\-Y\-T\-E}~(E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-N\-B\-L$|$E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-A\-D\-D\-R) /$\ast$ 1010$|$B0$|$A1$|$A0 $\ast$/}\label{group___e_e241__module_ga8ab0312edca14b07d9d0fbe4e5a22298}
+
+\item 
+\hypertarget{group___e_e241__module_gac7ed2f4a4c0f7fa0707be1c7bbaca3fa}{\#define {\bfseries E\-E241\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-A\-D\-D\-R}(addr)~( E\-E241\-\_\-\-C\-T\-R\-L\-\_\-\-B\-Y\-T\-E$|$((addr$>$$>$8)\&0x07) )}\label{group___e_e241__module_gac7ed2f4a4c0f7fa0707be1c7bbaca3fa}
+
+\item 
+\hypertarget{group___e_e241__module_ga7e5bfbb84fb492a939a407eddb39cdaa}{\#define {\bfseries E\-E241\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-8}~8 /$\ast$ 24\-A\-A08, 24\-L\-C08 $\ast$/}\label{group___e_e241__module_ga7e5bfbb84fb492a939a407eddb39cdaa}
+
+\item 
+\hypertarget{group___e_e241__module_ga07965930260e61a4eac28ead460d4f3d}{\#define {\bfseries E\-E241\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-16}~16 /$\ast$ 24\-A\-A16, 24\-L\-C16 $\ast$/}\label{group___e_e241__module_ga07965930260e61a4eac28ead460d4f3d}
+
+\item 
+\hypertarget{group___e_e241__module_ga8d27950246347a4badf56e8e51900105}{\#define {\bfseries E\-E241\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-32}~32 /$\ast$ 24\-A\-A32, 24\-L\-C32 $\ast$/}\label{group___e_e241__module_ga8d27950246347a4badf56e8e51900105}
+
+\item 
+\hypertarget{group___e_e241__module_gaf49a4e66d72089c6c66357696b4fca15}{\#define {\bfseries E\-E241\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-256}~256 /$\ast$ 24\-A\-A256, 24\-L\-C256, 24\-F\-C256 $\ast$/}\label{group___e_e241__module_gaf49a4e66d72089c6c66357696b4fca15}
+
+\item 
+\hypertarget{group___e_e241__module_ga0389b2518ef4d6ff75549684b75a8719}{\#define {\bfseries E\-E241\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-512}~512 /$\ast$ 24\-A\-A512, 24\-L\-C512, 24\-F\-C256 $\ast$/}\label{group___e_e241__module_ga0389b2518ef4d6ff75549684b75a8719}
+
+\item 
+\hypertarget{group___e_e241__module_ga9b1073633e053e30ff0117b7dfbff883}{\#define {\bfseries E\-E241\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-1025}~1025 /$\ast$ 24\-A\-A1025, 24\-L\-C1025, 24\-F\-C1025 $\ast$/}\label{group___e_e241__module_ga9b1073633e053e30ff0117b7dfbff883}
+
+\item 
+\hypertarget{group___e_e241__module_ga9f3066f5fad43b538c5ef6aa8ae8f8ef}{\#define {\bfseries E\-E241\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D}~E\-E241\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-\_\-8}\label{group___e_e241__module_ga9f3066f5fad43b538c5ef6aa8ae8f8ef}
+
+\item 
+\hypertarget{group___e_e241__module_ga4bfb2ada066f21d1c5b6bb9c8863b73b}{\#define {\bfseries E\-E241\-\_\-\-B\-L\-O\-C\-K\-\_\-\-B\-U\-F\-\_\-\-S\-I\-Z\-E}~12         /$\ast$ buffer used for block read/write. Max is 128. Keep it small to reduce stack consumption. $\ast$/}\label{group___e_e241__module_ga4bfb2ada066f21d1c5b6bb9c8863b73b}
+
+\item 
+\hypertarget{group___e_e241__module_gabc852017da07f3cb24ad0a79e80f8380}{\#define {\bfseries E\-E241\-\_\-\-M\-A\-X\-\_\-\-I2\-C\-\_\-\-A\-D\-D\-R\-\_\-\-M\-A\-S\-K}~0     /$\ast$ A2$|$A1$|$A0 are not used $\ast$/}\label{group___e_e241__module_gabc852017da07f3cb24ad0a79e80f8380}
+
+\item 
+\hypertarget{group___e_e241__module_ga561d89197fb00fd1b12c2239de4efa3f}{\#define {\bfseries E\-E241\-\_\-\-M\-A\-X\-\_\-\-A\-D\-D\-R\-E\-S\-S}~0x03\-F\-F /$\ast$ 8 k\-Bit is 1\-K\-Byte $\ast$/}\label{group___e_e241__module_ga561d89197fb00fd1b12c2239de4efa3f}
+
+\item 
+\hypertarget{group___e_e241__module_gac958865424df30a535737ca3a5aea7e4}{\#define {\bfseries E\-E241\-\_\-\-A\-D\-D\-R\-T}~word  /$\ast$ a word/16bit is enough to hold the address $\ast$/}\label{group___e_e241__module_gac958865424df30a535737ca3a5aea7e4}
+
+\item 
+\hypertarget{group___e_e241__module_ga235fba3b11ace602f066327d9002b7b8}{\#define {\bfseries E\-E241\-\_\-\-P\-A\-G\-E\-\_\-\-S\-I\-Z\-E}~16    /$\ast$ maximum page size (for page/block operation) $\ast$/}\label{group___e_e241__module_ga235fba3b11ace602f066327d9002b7b8}
+
+\item 
+\hypertarget{group___e_e241__module_gac46a6bd169d0e5fd4779589483be78cb}{\#define {\bfseries E\-E241\-\_\-\-D\-O\-\_\-\-A\-C\-K\-N\-O\-W\-L\-E\-D\-G\-E\-\_\-\-P\-O\-L\-L\-I\-N\-G}~1 /$\ast$ Perform acknowledge polling in the driver $\ast$/}\label{group___e_e241__module_gac46a6bd169d0e5fd4779589483be78cb}
+
+\item 
+\hypertarget{group___e_e241__module_ga15dd6a889c3d46be4b900a9e5e7b5134}{\#define {\bfseries E\-E241\-\_\-\-P\-A\-G\-E\-\_\-\-W\-R\-I\-T\-E\-\_\-\-T\-I\-M\-E\-\_\-\-M\-S}~10 /$\ast$ Page Write Time as per data sheet $\ast$/}\label{group___e_e241__module_ga15dd6a889c3d46be4b900a9e5e7b5134}
+
+\item 
+\hypertarget{group___e_e241__module_ga96d41497b8dcd85d78124484ef837fb7}{\#define {\bfseries E\-E241\-\_\-\-A\-C\-K\-\_\-\-P\-O\-L\-L\-I\-N\-G\-\_\-\-T\-I\-M\-E\-\_\-\-U\-S}~100 /$\ast$ Acknowledge polling \hyperlink{group__main__module_ga18fd04fdadfae991704e8d58a0e0ae8e}{time} in the I2\-C driver$\ast$/}\label{group___e_e241__module_ga96d41497b8dcd85d78124484ef837fb7}
+
+\item 
+\hypertarget{group___e_e241__module_gab2bd16709a938e5cf3e4d10517a86d89}{\#define {\bfseries \-\_\-\-\_\-\-B\-W\-User\-Type\-\_\-\-E\-E241\-\_\-\-Address}}\label{group___e_e241__module_gab2bd16709a938e5cf3e4d10517a86d89}
+
+\item 
+\hypertarget{group___e_e241__module_ga265be1273aa290e3ab124bb62451a402}{\#define {\bfseries E\-E241\-\_\-\-P\-A\-R\-S\-E\-\_\-\-C\-O\-M\-M\-A\-N\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}~0 /$\ast$ set to 1 if method Parse\-Command() is present, 0 otherwise $\ast$/}\label{group___e_e241__module_ga265be1273aa290e3ab124bb62451a402}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___e_e241__module_gaf4970fb35e701ca12079b313406849fd}{typedef E\-E241\-\_\-\-A\-D\-D\-R\-T {\bfseries E\-E241\-\_\-\-Address}}\label{group___e_e241__module_gaf4970fb35e701ca12079b313406849fd}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___e_e241__module_ga1070e81c28997395bd8de6a0a8b995be}{byte {\bfseries E\-E241\-\_\-\-Write\-Byte} (E\-E241\-\_\-\-Address addr, byte data)}\label{group___e_e241__module_ga1070e81c28997395bd8de6a0a8b995be}
+
+\item 
+\hypertarget{group___e_e241__module_ga982afa9536b10db5a0764a56502e8f9c}{byte {\bfseries E\-E241\-\_\-\-Read\-Byte} (E\-E241\-\_\-\-Address addr, byte $\ast$data)}\label{group___e_e241__module_ga982afa9536b10db5a0764a56502e8f9c}
+
+\item 
+\hypertarget{group___e_e241__module_ga80792b51a53bbd97de7dbcd3ff9d86cd}{byte {\bfseries E\-E241\-\_\-\-Read\-Block} (E\-E241\-\_\-\-Address addr, byte $\ast$data, word data\-Size)}\label{group___e_e241__module_ga80792b51a53bbd97de7dbcd3ff9d86cd}
+
+\item 
+\hypertarget{group___e_e241__module_ga5d97e5f8f3f54b1bfa4ae79ca4fd87c2}{byte {\bfseries E\-E241\-\_\-\-Write\-Block\-Page} (E\-E241\-\_\-\-Address addr, byte $\ast$data, word data\-Size)}\label{group___e_e241__module_ga5d97e5f8f3f54b1bfa4ae79ca4fd87c2}
+
+\item 
+\hypertarget{group___e_e241__module_gac6f295c10b0784f21e97ae7456835787}{byte {\bfseries E\-E241\-\_\-\-Write\-Block} (E\-E241\-\_\-\-Address addr, byte $\ast$data, word data\-Size)}\label{group___e_e241__module_gac6f295c10b0784f21e97ae7456835787}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}

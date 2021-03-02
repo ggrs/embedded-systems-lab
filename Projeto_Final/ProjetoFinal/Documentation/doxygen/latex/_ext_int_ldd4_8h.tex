@@ -1,0 +1,52 @@
+\hypertarget{_ext_int_ldd4_8h}{\section{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Ext\-Int\-Ldd4.h File Reference}
+\label{_ext_int_ldd4_8h}\index{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Ext\-Int\-Ldd4.\-h@{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Ext\-Int\-Ldd4.\-h}}
+}
+
+
+This component, \char`\"{}\-Ext\-Int\-\_\-\-L\-D\-D\char`\"{}, provide a low level A\-P\-I for unified access of external interrupts handling across various device designs. The component uses one pin which generates interrupt on selected edge.  
+
+
+{\ttfamily \#include \char`\"{}Cpu.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\-E\-\_\-\-Types.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\-E\-\_\-\-Error.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\-E\-\_\-\-Const.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O\-\_\-\-Map.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\-P\-I\-O\-\_\-\-P\-D\-D.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\-O\-R\-T\-\_\-\-P\-D\-D.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga1693c80c3b1560249c672ecbb04484cc}{Ext\-Int\-Ldd4\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~0x400\-F\-F0\-C0\-U
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga8783b358df665e3568cd57ea48449719}{Ext\-Int\-Ldd4\-\_\-\-Device\-Data}~((\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$)\hyperlink{group___p_e___types__module_gaa1c23d559daef5bcd3327ca83fb56f5a}{P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-Ext\-Int\-Ldd4\-\_\-\-I\-D))
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga5579cb8b94010961344a9ba2ca4fac53}{Ext\-Int\-Ldd4\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_gab23223167aa471dd8d7239d50b59fc39}{Ext\-Int\-Ldd4\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga3af526cfa02c613a416e8d5cea264c4b}{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga4035aa55e366680133095ea66d277a18}{Ext\-Int\-Ldd4\-\_\-\-On\-Interrupt\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_ga461cbacc2c4729ebf39acb3439dfb10d}{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-I\-N\-D\-E\-X}~0x07\-U
+\item 
+\#define \hyperlink{group___ext_int_ldd4__module_gac712c455525c29f44e0662f58f02006b}{Ext\-Int\-Ldd4\-\_\-\-P\-I\-N\-\_\-\-M\-A\-S\-K}~0x80\-U
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___ext_int_ldd4__module_ga957ff91899de7c76cb5df13177134960}{Ext\-Int\-Ldd4\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em This method initializes the associated peripheral(s) and the component internal variables. The method is called automatically as a part of the application initialization code. \end{DoxyCompactList}\item 
+\hypertarget{group___ext_int_ldd4__module_ga95399b81989a099bb7a1c4e0ed77480f}{{\bfseries P\-E\-\_\-\-I\-S\-R} (Ext\-Int\-Ldd4\-\_\-\-Interrupt)}\label{group___ext_int_ldd4__module_ga95399b81989a099bb7a1c4e0ed77480f}
+
+\item 
+bool \hyperlink{group___ext_int_ldd4__module_ga6ec76062456005ea035001124d441a19}{Ext\-Int\-Ldd4\-\_\-\-Get\-Val} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Returns the actual value of the input pin of the component. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___ext_int_ldd4__module_ga5e5afc23d4575c4a062dd514f5f8e846}{Ext\-Int\-Ldd4\-\_\-\-Set\-Edge} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, uint8\-\_\-t Edge)
+\begin{DoxyCompactList}\small\item\em Sets the edge type for this component that generates the interrupt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This component, \char`\"{}\-Ext\-Int\-\_\-\-L\-D\-D\char`\"{}, provide a low level A\-P\-I for unified access of external interrupts handling across various device designs. The component uses one pin which generates interrupt on selected edge. \begin{DoxyVersion}{Version}
+01.\-02 
+\end{DoxyVersion}

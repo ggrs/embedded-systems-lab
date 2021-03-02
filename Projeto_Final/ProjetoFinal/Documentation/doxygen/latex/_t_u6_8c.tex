@@ -1,0 +1,34 @@
+\hypertarget{_t_u6_8c}{\section{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-T\-U6.c File Reference}
+\label{_t_u6_8c}\index{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-T\-U6.\-c@{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-T\-U6.\-c}}
+}
+
+
+This Timer\-Unit component provides a low level A\-P\-I for unified hardware access across various timer devices using the Prescaler-\/\-Counter-\/\-Compare-\/\-Capture timer structure.  
+
+
+{\ttfamily \#include \char`\"{}T\-U6.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O\-\_\-\-Map.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_u6___t_device_data}{T\-U6\-\_\-\-T\-Device\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___t_u6__module_ga69b812821e310f9575c95eec4b7bb247}{typedef \hyperlink{struct_t_u6___t_device_data}{T\-U6\-\_\-\-T\-Device\-Data} $\ast$ {\bfseries T\-U6\-\_\-\-T\-Device\-Data\-Ptr}}\label{group___t_u6__module_ga69b812821e310f9575c95eec4b7bb247}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___t_u6__module_ga5a64889badba7f6e42d3cc669d9e8fba}{T\-U6\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets interrupt priority, sets pin routing, sets timing, etc. If the property \mbox{[}\char`\"{}\-Enable in init. code\char`\"{}\mbox{]} is set to \char`\"{}yes\char`\"{} value then the device is also enabled (see the description of the \mbox{[}Enable\mbox{]} method). In this case the \mbox{[}Enable\mbox{]} method is not necessary and needn't to be generated. This method can be called only once. Before the second call of Init the \mbox{[}Deinit\mbox{]} must be called first. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___t_u6__module_ga19c9c41ebde0ddfdd0887e0562390085}{T\-U6\-\_\-\-Reset\-Counter} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Resets counter. If counter is counting up then it is set to zero. If counter is counting down then counter is updated to the reload value. The method is not available if H\-W doesn't allow resetting of the counter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This Timer\-Unit component provides a low level A\-P\-I for unified hardware access across various timer devices using the Prescaler-\/\-Counter-\/\-Compare-\/\-Capture timer structure. \begin{DoxyVersion}{Version}
+01.\-11 
+\end{DoxyVersion}

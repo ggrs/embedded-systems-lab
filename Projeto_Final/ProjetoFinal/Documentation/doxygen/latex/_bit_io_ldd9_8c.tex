@@ -1,0 +1,34 @@
+\hypertarget{_bit_io_ldd9_8c}{\section{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Bit\-Io\-Ldd9.c File Reference}
+\label{_bit_io_ldd9_8c}\index{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Bit\-Io\-Ldd9.\-c@{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Bit\-Io\-Ldd9.\-c}}
+}
+
+
+The H\-A\-L Bit\-I\-O component provides a low level A\-P\-I for unified access to general purpose digital input/output pins across various device designs.  
+
+
+{\ttfamily \#include \char`\"{}Bit\-Io\-Ldd9.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_bit_io_ldd9___t_device_data}{Bit\-Io\-Ldd9\-\_\-\-T\-Device\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___bit_io_ldd9__module_ga14c5f1bba4476bfea732ee53bcbc3785}{typedef \hyperlink{struct_bit_io_ldd9___t_device_data}{Bit\-Io\-Ldd9\-\_\-\-T\-Device\-Data} $\ast$ {\bfseries Bit\-Io\-Ldd9\-\_\-\-T\-Device\-Data\-Ptr}}\label{group___bit_io_ldd9__module_ga14c5f1bba4476bfea732ee53bcbc3785}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___bit_io_ldd9__module_gad80d9c6b4e1521197f673e702034e626}{Bit\-Io\-Ldd9\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets interrupt priority, sets pin routing, sets timing, etc. If the \char`\"{}\-Enable
+    in init. code\char`\"{} is set to \char`\"{}yes\char`\"{} value then the device is also enabled(see the description of the Enable() method). In this case the Enable() method is not necessary and needn't to be generated. \end{DoxyCompactList}\item 
+bool \hyperlink{group___bit_io_ldd9__module_gaebd043c61a2e886b4b8961e0932f25be}{Bit\-Io\-Ldd9\-\_\-\-Get\-Val} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Returns the input/output value. If the direction is \mbox{[}input\mbox{]} then the input value of the pin is read and returned. If the direction is \mbox{[}output\mbox{]} then the last written value is read and returned (see $<$\-Safe mode$>$=\char`\"{}\char`\"{}$>$ property for limitations). This method cannot be disabled if direction is \mbox{[}input\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The H\-A\-L Bit\-I\-O component provides a low level A\-P\-I for unified access to general purpose digital input/output pins across various device designs. \begin{DoxyVersion}{Version}
+01.\-03 R\-T\-O\-S drivers using H\-A\-L Bit\-I\-O A\-P\-I are simpler and more portable to various microprocessors. 
+\end{DoxyVersion}

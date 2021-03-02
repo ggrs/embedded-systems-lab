@@ -1,0 +1,48 @@
+\hypertarget{_s_m1_8c}{\section{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-S\-M1.c File Reference}
+\label{_s_m1_8c}\index{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-S\-M1.\-c@{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-S\-M1.\-c}}
+}
+
+
+This component \char`\"{}\-S\-P\-I\-Master\-\_\-\-L\-D\-D\char`\"{} implements M\-A\-S\-T\-E\-R part of synchronous serial master-\/slave communication.  
+
+
+{\ttfamily \#include \char`\"{}Events.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}S\-M1.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_s_m1___t_device_data}{S\-M1\-\_\-\-T\-Device\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___s_m1__module_ga5f04a8830cd52a3ffa1678d113f31aee}{\#define {\bfseries A\-V\-A\-I\-L\-A\-B\-L\-E\-\_\-\-E\-V\-E\-N\-T\-S\-\_\-\-M\-A\-S\-K}~(\hyperlink{group___p_e___types__module_ga86acbb58883ee4b3c59516dd9e512cd6}{L\-D\-D\-\_\-\-S\-P\-I\-M\-A\-S\-T\-E\-R\-\_\-\-O\-N\-\_\-\-B\-L\-O\-C\-K\-\_\-\-R\-E\-C\-E\-I\-V\-E\-D} $|$ \hyperlink{group___p_e___types__module_ga49607a93aeafc9c6cc3210aa00df6f2d}{L\-D\-D\-\_\-\-S\-P\-I\-M\-A\-S\-T\-E\-R\-\_\-\-O\-N\-\_\-\-B\-L\-O\-C\-K\-\_\-\-S\-E\-N\-T})}\label{group___s_m1__module_ga5f04a8830cd52a3ffa1678d113f31aee}
+
+\item 
+\hypertarget{group___s_m1__module_gab388ba6d75937b5119086cb756d45ead}{\#define {\bfseries S\-M1\-\_\-\-A\-V\-A\-I\-L\-A\-B\-L\-E\-\_\-\-P\-I\-N\-\_\-\-M\-A\-S\-K}~(\hyperlink{group___p_e___types__module_ga31823c100ddaf6729e0a16f7cea77e7a}{L\-D\-D\-\_\-\-S\-P\-I\-M\-A\-S\-T\-E\-R\-\_\-\-O\-U\-T\-P\-U\-T\-\_\-\-P\-I\-N} $|$ \hyperlink{group___p_e___types__module_gad1273260faec4033c18eb56120e8fc7e}{L\-D\-D\-\_\-\-S\-P\-I\-M\-A\-S\-T\-E\-R\-\_\-\-C\-L\-K\-\_\-\-P\-I\-N})}\label{group___s_m1__module_gab388ba6d75937b5119086cb756d45ead}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___s_m1__module_gaef36ccd3e4d0417064487f2f271348c1}{typedef \hyperlink{struct_s_m1___t_device_data}{S\-M1\-\_\-\-T\-Device\-Data} $\ast$ {\bfseries S\-M1\-\_\-\-T\-Device\-Data\-Ptr}}\label{group___s_m1__module_gaef36ccd3e4d0417064487f2f271348c1}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___s_m1__module_gad3b10564a4ed41d623dc3c2e47c47db5}{S\-M1\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets interrupt priority, sets pin routing, sets timing, etc. If the \char`\"{}\-Enable in init. code\char`\"{} is set to \char`\"{}yes\char`\"{} value then the device is also enabled(see the description of the Enable() method). In this case the Enable() method is not necessary and needn't to be generated. This method can be called only once. Before the second call of Init() the Deinit() must be called first. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___s_m1__module_ga667ca934fe6d893b7a415609216a34b7}{S\-M1\-\_\-\-Receive\-Block} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, \hyperlink{group___p_e___types__module_gade8ef9401405bd941b6da738b807f980}{L\-D\-D\-\_\-\-T\-Data} $\ast$Buffer\-Ptr, uint16\-\_\-t Size)
+\begin{DoxyCompactList}\small\item\em This method specifies the number of data to receive. The method returns E\-R\-R\-\_\-\-B\-U\-S\-Y until the specified number of characters is received. The method $<$\-Cancel\-Block\-Reception$>$ can be used to cancel a running receive operation. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___s_m1__module_ga939d367011f517b484f0f9e3f3861195}{S\-M1\-\_\-\-Send\-Block} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, \hyperlink{group___p_e___types__module_gade8ef9401405bd941b6da738b807f980}{L\-D\-D\-\_\-\-T\-Data} $\ast$Buffer\-Ptr, uint16\-\_\-t Size)
+\begin{DoxyCompactList}\small\item\em This method sends a block of characters. The method returns E\-R\-R\-\_\-\-B\-U\-S\-Y when the previous block transmission is not completed. The method $<$\-Cancel\-Block\-Transmission$>$ can be used to cancel a transmit operation. \end{DoxyCompactList}\item 
+\hypertarget{group___s_m1__module_ga07db021879ada24b9ba2af238b6af653}{{\bfseries P\-E\-\_\-\-I\-S\-R} (S\-M1\-\_\-\-Interrupt)}\label{group___s_m1__module_ga07db021879ada24b9ba2af238b6af653}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This component \char`\"{}\-S\-P\-I\-Master\-\_\-\-L\-D\-D\char`\"{} implements M\-A\-S\-T\-E\-R part of synchronous serial master-\/slave communication. \begin{DoxyVersion}{Version}
+01.\-02 
+\end{DoxyVersion}

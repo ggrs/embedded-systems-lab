@@ -1,0 +1,3 @@
+/ProjetoFinal/Documentation/doxygen/pex.doxyfile
+/ProjetoFinal/Documentation/doxygen/ProjetoFinal.Doxyfile
+/ProjetoFinal/Documentation/doxygen/pex.doxyfile

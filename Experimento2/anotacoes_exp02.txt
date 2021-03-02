@@ -1,0 +1,144 @@
+// anotacoes Experimento 2 EA076
+
+
+/* --------------------------------- Aula 01 ------------------------------------ */
+
+// 1) Sensor de temperatura - LM61
+
+// Pino Vo do LM61 é ligado ao PTB0
+
+uint16_t n; // variavel que armazena o numero que é lido do conversor AD
+uint16_t mv; // variavel que armazena o valor em mV -> para poder trabalhar com numeros inteiros; pode ser necessario
+             // do tipo uint32_t pois o produto abaixo pode resultar em um numero com mais de 16 bits e truncar o reusltado
+
+// Exemplo:
+// 3300 - 65535 (2^16 -1)
+// mv   - n
+// mv = (3300*n)/65535 ***** fazer a multiplicacao primeiro, senao a divisao inteira resultará 0 ou 1 ******
+
+
+// é mais facil armazenar o valor da temperatura em décimos de grau celsius
+uint16_t tdc; // temperatura em décimo de grau **** pode até ser com sinal (temperatura negativa) ****
+
+
+// T(°C) = (Vo - 600mV)/10mV/°C
+// T(0.1°C) = Vo - 600mV
+
+tdc = mv - 600;
+
+// é interessante armazenar a temperatura em um buffer
+
+// funcao para mandar string de temperatua
+
+void Temp2Str(uint16_t te, uint8_t *s) { // te em décimo de grau; s é a string onde vai ser colocada a temperatura
+    // para sofisticar mais essa funçao, tratar o caso de temperatura negativa
+    uint8_t c, d, u; // centena, dezena e unidade do numero
+
+    // para extrair a centena:
+    c = te/100;
+    te = te%100; // pega o resto da divisao; exemplo: 347 -> c = 3, te = 47
+    d = te/10;
+    u = te%10;
+
+    //para converter esse algarismo para caracter, vamos considerar os numeros na tabela ASCII:
+    //'0' = 0x30
+    //'1' = 0x31
+    // ...
+    //'9' = 0x3
+    // entao, basta somar 0x30 (0) para converter o numero para caracter
+    // pode-se sofisticar o programa omitindo a centena e a dezena, quando possivel
+    *s = c + 0x30;
+    s++;
+    *s = d + 0x30;
+    s++
+    *s = '.';
+    *s = u + 0x30;
+    s++;
+    *s = 0;
+
+}
+
+// 2) RTC - Ligar PTC3 com PTC1
+
+// declarar uma variavel global do tipo estrutura
+// tempo.year
+// tempo.month
+// tempo.day
+// tempo.hour
+// tempo.minute
+// tempo.second
+
+// 3) Controle de motor
+
+// nomenclatura - A significa entrada - 1A,2A,3A,4A
+// Y significa saida
+
+// O driver tem duas pontes completas (ou quatro meias pontes)
+// Ligar no 1A e 2A (ou 3A e 4A)
+
+// Para controlar a velocidade, usar um sinal de PWM na entrada 1,2EN
+
+// O componente de PWM deve ser devidamente configurado
+// Usar o timer e o canal corretos (PTE20)
+// Configurar o periodo/frequencia do PWM - usar frequencia de 100 Hz (= periodo de 10ms)
+
+// O processador só funciona com polaridade negativa
+// Para corrigir isso vamos usar uma soluçao por software
+// Se quisermos um dury cycle de 30% (positivo), enviar um duty cycle de 70%
+
+// Usar o metodo SetRatio16
+// Para converter o valor de duty cycle para 16 bits, multiplicar por 655
+
+void SetDC (uint8_t dc) {
+    uint16_t n; 
+
+    // variavel dc armazena um valor de 0 a 100
+    if (dc > 100) dc = 100;
+    // complementar o valor para ajustar a polaridade negativa e multiplicar
+    n = (100 - dc)*655;
+
+    X1_SetRatio16(n); // "X1" é o nome do componente
+
+}
+
+
+// como entrar com um numero no terminal?
+uint8_t n; // variavel global
+
+n = n * 10;
+
+n = n + (t - 0x30); // t é uma variavel que armazena o caracter
+
+// fazer isso acima até encontrar o ENTER
+
+
+/* --------------------------------- Aula 02 ------------------------------------ */
+
+
+
+// http://rxtx.qbang.org/eclipse/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+\hypertarget{_bit_io_ldd7_8h}{\section{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Bit\-Io\-Ldd7.h File Reference}
+\label{_bit_io_ldd7_8h}\index{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Bit\-Io\-Ldd7.\-h@{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Bit\-Io\-Ldd7.\-h}}
+}
+
+
+The H\-A\-L Bit\-I\-O component provides a low level A\-P\-I for unified access to general purpose digital input/output pins across various device designs.  
+
+
+{\ttfamily \#include \char`\"{}P\-E\-\_\-\-Types.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\-E\-\_\-\-Error.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\-E\-\_\-\-Const.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}I\-O\-\_\-\-Map.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}G\-P\-I\-O\-\_\-\-P\-D\-D.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Cpu.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_gaecb0933dfdc4408d4e82af57b1458b41}{Bit\-Io\-Ldd7\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~0x400\-F\-F100\-U
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_ga28a1c938c911f765d2dc333694f9505f}{Bit\-Io\-Ldd7\-\_\-\-Device\-Data}~((\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$)\hyperlink{group___p_e___types__module_gaa1c23d559daef5bcd3327ca83fb56f5a}{P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-Bit\-Io\-Ldd7\-\_\-\-I\-D))
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_ga0cd7de05139351a8d7223583734bc161}{Bit\-Io\-Ldd7\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_ga324a86d83f0091eb5a4f1c904aba205f}{Bit\-Io\-Ldd7\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_ga67378fa52fb236926852eaa6a8b436d6}{Bit\-Io\-Ldd7\-\_\-\-Put\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_gaea56f115a6bef18bb9f57ff9d981ccbd}{Bit\-Io\-Ldd7\-\_\-\-Clr\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_gacb3f57b0defc7e929b43ddd858acfb15}{Bit\-Io\-Ldd7\-\_\-\-Set\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_ga6e799e6a1ee1db643a4c9ef9e69b8180}{Bit\-Io\-Ldd7\-\_\-\-Neg\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_gad8a699f629559c876160d573a75c2914}{Bit\-Io\-Ldd7\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~F\-P\-T\-E\-\_\-\-B\-A\-S\-E\-\_\-\-P\-T\-R
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_gac518d50a533da6d2db8b9027e57fc04f}{Bit\-Io\-Ldd7\-\_\-\-P\-O\-R\-T\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~P\-O\-R\-T\-E\-\_\-\-B\-A\-S\-E\-\_\-\-P\-T\-R
+\item 
+\#define \hyperlink{group___bit_io_ldd7__module_gab9e4e814ee4d363a367ae7b2836543fc}{Bit\-Io\-Ldd7\-\_\-\-P\-O\-R\-T\-\_\-\-M\-A\-S\-K}~0x04\-U
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___bit_io_ldd7__module_gaa210933c93b15395117454a2a398c7fc}{Bit\-Io\-Ldd7\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets interrupt priority, sets pin routing, sets timing, etc. If the \char`\"{}\-Enable
+    in init. code\char`\"{} is set to \char`\"{}yes\char`\"{} value then the device is also enabled(see the description of the Enable() method). In this case the Enable() method is not necessary and needn't to be generated. \end{DoxyCompactList}\item 
+bool \hyperlink{group___bit_io_ldd7__module_ga3ee3dd087f234ca3a6c498e95a6b8f9b}{Bit\-Io\-Ldd7\-\_\-\-Get\-Val} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Returns the input/output value. If the direction is \mbox{[}input\mbox{]} then the input value of the pin is read and returned. If the direction is \mbox{[}output\mbox{]} then the last written value is read and returned (see $<$\-Safe mode$>$=\char`\"{}\char`\"{}$>$ property for limitations). This method cannot be disabled if direction is \mbox{[}input\mbox{]}. \end{DoxyCompactList}\item 
+void \hyperlink{group___bit_io_ldd7__module_ga5ed462070056354e28dd16e59c3cf772}{Bit\-Io\-Ldd7\-\_\-\-Put\-Val} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, bool Val)
+\begin{DoxyCompactList}\small\item\em The specified output value is set. If the direction is {\bfseries  input}, the component saves the value to a memory or a register and this value will be written to the pin after switching to the output mode (using {\ttfamily Set\-Dir(\-T\-R\-U\-E)}; see \href{BitIOProperties.html#SafeMode}{\tt Safe mode} property for limitations). If the direction is {\bfseries output}, it writes the value to the pin. (Method is available only if the direction = $<$u$>${\ttfamily output}$<$/u$>$ or $<$u$>${\ttfamily  input/output}$<$/u$>$). \end{DoxyCompactList}\item 
+void \hyperlink{group___bit_io_ldd7__module_ga6eafafb0a2c30b4347462e6ff00d6f45}{Bit\-Io\-Ldd7\-\_\-\-Clr\-Val} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Clears (set to zero) the output value. It is equivalent to the \mbox{[}Put\-Val(\-F\-A\-L\-S\-E)\mbox{]}. This method is available only if the direction = \-\_\-\mbox{[}output\mbox{]}\-\_\- or \-\_\-\mbox{[}input/output\mbox{]}\-\_\-. \end{DoxyCompactList}\item 
+void \hyperlink{group___bit_io_ldd7__module_gaae11392cdaf0061ec255e1de58e509f5}{Bit\-Io\-Ldd7\-\_\-\-Set\-Val} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Sets (to one) the output value. It is equivalent to the \mbox{[}Put\-Val(\-T\-R\-U\-E)\mbox{]}. This method is available only if the direction = \-\_\-\mbox{[}output\mbox{]}\-\_\- or \-\_\-\mbox{[}input/output\mbox{]}\-\_\-. \end{DoxyCompactList}\item 
+void \hyperlink{group___bit_io_ldd7__module_gacf8b1f0a63a31fdfd3cd3bb2589414b1}{Bit\-Io\-Ldd7\-\_\-\-Neg\-Val} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Negates (inverts) the output value. It is equivalent to the \mbox{[}Put\-Val(!\-Get\-Val())\mbox{]}. This method is available only if the direction = \-\_\-\mbox{[}output\mbox{]}\-\_\- or \-\_\-\mbox{[}input/output\mbox{]}\-\_\-. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The H\-A\-L Bit\-I\-O component provides a low level A\-P\-I for unified access to general purpose digital input/output pins across various device designs. \begin{DoxyVersion}{Version}
+01.\-03 R\-T\-O\-S drivers using H\-A\-L Bit\-I\-O A\-P\-I are simpler and more portable to various microprocessors. 
+\end{DoxyVersion}

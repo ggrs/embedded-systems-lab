@@ -1,0 +1,178 @@
+\hypertarget{group___r_t_c1__module}{\section{R\-T\-C1 module documentation}
+\label{group___r_t_c1__module}\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_r_t_c1___t_device_data}{R\-T\-C1\-\_\-\-T\-Device\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___r_t_c1__module_ga9c7b6d1f2ca6e519921030d7157d1c4e}{\#define {\bfseries R\-T\-C1\-\_\-\-I\-N\-T\-E\-R\-R\-U\-P\-T\-\_\-\-M\-O\-D\-E}}\label{group___r_t_c1__module_ga9c7b6d1f2ca6e519921030d7157d1c4e}
+
+\item 
+\#define \hyperlink{group___r_t_c1__module_gae43d8732a649441401c7d94c679f324b}{R\-T\-C1\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~0x4003\-D000\-U
+\item 
+\#define \hyperlink{group___r_t_c1__module_gaf408ea7389b715a7993fe1abc830ee7d}{R\-T\-C1\-\_\-\-Device\-Data}~((\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$)\hyperlink{group___p_e___types__module_gaa1c23d559daef5bcd3327ca83fb56f5a}{P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-R\-T\-C1\-\_\-\-I\-D))
+\item 
+\#define \hyperlink{group___r_t_c1__module_gae9f49e013757febe26a91d3d403ac89f}{R\-T\-C1\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___r_t_c1__module_gac015150387e8c0d55a222b9d3d047178}{R\-T\-C1\-\_\-\-Enable\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___r_t_c1__module_ga68cfd5878ced2231279a5ec9cec48d05}{R\-T\-C1\-\_\-\-Get\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___r_t_c1__module_ga734e8dc20145b950b4556deab3a14218}{R\-T\-C1\-\_\-\-Set\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___r_t_c1__module_ga0a843082919e5a384e4f7b91de31f823}{R\-T\-C1\-\_\-\-On\-Second\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___r_t_c1__module_gae1dda9bbc5f3626dcc3df64cb57a2984}{typedef struct \hyperlink{struct_r_t_c1___t_device_data}{R\-T\-C1\-\_\-\-T\-Device\-Data} $\ast$ {\bfseries R\-T\-C1\-\_\-\-T\-Device\-Data\-Ptr}}\label{group___r_t_c1__module_gae1dda9bbc5f3626dcc3df64cb57a2984}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___r_t_c1__module_ga844f34d73a2540c6cd99df66b247dd49}{R\-T\-C1\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr, bool Soft\-Init)
+\begin{DoxyCompactList}\small\item\em Initializes the device. There are two modes of initialization. 1) R\-T\-C device is N\-O\-T battery backed up. (Soft\-Init = F\-A\-L\-S\-E) All registers (interrupts, counters, clock routing …) that influence R\-T\-C behavior are initialized. Note\-: This initialization mode doesn't preserve time and date settings. 2) R\-T\-C device I\-S battery backed up. (Soft\-Init = T\-R\-U\-E). Only registers that are not backed up are initialized (Interrupt priority …). R\-T\-C device is running, time and date a preserved, R\-T\-C interrupts (events) are preserved too. Allocates memory for the device data structure. This method can be called only once. Before the second call of Init() the Deinit() must be called first. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___r_t_c1__module_ga2f49cd5de22b91ec36641f0ac9161024}{R\-T\-C1\-\_\-\-Enable} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Enables the real-\/time clock module (Typically sets the module enable bit). All other H\-W settings are preserved. R\-T\-C module can be disabled by the \mbox{[}Disable\mbox{]} method and reinitialized by the \mbox{[}Init\mbox{]} method. \end{DoxyCompactList}\item 
+void \hyperlink{group___r_t_c1__module_gaeed73f4c93bfd44f15170c28028c81fb}{R\-T\-C1\-\_\-\-Get\-Time} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, \hyperlink{struct_l_d_d___r_t_c___t_time}{L\-D\-D\-\_\-\-R\-T\-C\-\_\-\-T\-Time} $\ast$Time\-Ptr)
+\begin{DoxyCompactList}\small\item\em Returns actual time and date. Note\-: Fields not supported by H\-W are calculated in software. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___r_t_c1__module_ga91540e2cd845981f45f915884360d1fa}{R\-T\-C1\-\_\-\-Set\-Time} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, \hyperlink{struct_l_d_d___r_t_c___t_time}{L\-D\-D\-\_\-\-R\-T\-C\-\_\-\-T\-Time} $\ast$Time\-Ptr)
+\begin{DoxyCompactList}\small\item\em Sets new time and date. Note\-: All \hyperlink{struct_l_d_d___r_t_c___t_time}{L\-D\-D\-\_\-\-R\-T\-C\-\_\-\-T\-Time} structure members must be correctly filled in. \end{DoxyCompactList}\item 
+\hypertarget{group___r_t_c1__module_gad10e63c95cadae5f5b9bd1db4f857477}{{\bfseries P\-E\-\_\-\-I\-S\-R} (R\-T\-C1\-\_\-\-Interrupt)}\label{group___r_t_c1__module_gad10e63c95cadae5f5b9bd1db4f857477}
+
+\item 
+\hypertarget{group___r_t_c1__module_ga15e68e29f9659063d40fb03dbf1f8f25}{{\bfseries P\-E\-\_\-\-I\-S\-R} (R\-T\-C1\-\_\-\-Seconds\-Interrupt)}\label{group___r_t_c1__module_ga15e68e29f9659063d40fb03dbf1f8f25}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___r_t_c1__module_gaf408ea7389b715a7993fe1abc830ee7d}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-Device\-Data@{R\-T\-C1\-\_\-\-Device\-Data}}
+\index{R\-T\-C1\-\_\-\-Device\-Data@{R\-T\-C1\-\_\-\-Device\-Data}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-Device\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-C1\-\_\-\-Device\-Data~(({\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$){\bf P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-R\-T\-C1\-\_\-\-I\-D))}}\label{group___r_t_c1__module_gaf408ea7389b715a7993fe1abc830ee7d}
+Device data structure pointer used when auto initialization property is enabled. This constant can be passed as a first parameter to all component's methods. \hypertarget{group___r_t_c1__module_gac015150387e8c0d55a222b9d3d047178}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-Enable\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{R\-T\-C1\-\_\-\-Enable\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{R\-T\-C1\-\_\-\-Enable\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{R\-T\-C1\-\_\-\-Enable\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-Enable\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-C1\-\_\-\-Enable\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___r_t_c1__module_gac015150387e8c0d55a222b9d3d047178}
+Enable method of the component R\-T\-C1 is enabled (generated) \hypertarget{group___r_t_c1__module_ga68cfd5878ced2231279a5ec9cec48d05}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-Get\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{R\-T\-C1\-\_\-\-Get\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{R\-T\-C1\-\_\-\-Get\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{R\-T\-C1\-\_\-\-Get\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-Get\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-C1\-\_\-\-Get\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___r_t_c1__module_ga68cfd5878ced2231279a5ec9cec48d05}
+Get\-Time method of the component R\-T\-C1 is enabled (generated) \hypertarget{group___r_t_c1__module_gae9f49e013757febe26a91d3d403ac89f}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{R\-T\-C1\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{R\-T\-C1\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{R\-T\-C1\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-C1\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___r_t_c1__module_gae9f49e013757febe26a91d3d403ac89f}
+Init method of the component R\-T\-C1 is enabled (generated) \hypertarget{group___r_t_c1__module_ga0a843082919e5a384e4f7b91de31f823}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-On\-Second\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{R\-T\-C1\-\_\-\-On\-Second\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{R\-T\-C1\-\_\-\-On\-Second\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D@{R\-T\-C1\-\_\-\-On\-Second\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-On\-Second\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-C1\-\_\-\-On\-Second\-\_\-\-E\-V\-E\-N\-T\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___r_t_c1__module_ga0a843082919e5a384e4f7b91de31f823}
+On\-Second event of the component R\-T\-C1 is enabled (generated) \hypertarget{group___r_t_c1__module_gae43d8732a649441401c7d94c679f324b}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{R\-T\-C1\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}}
+\index{R\-T\-C1\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{R\-T\-C1\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-C1\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S~0x4003\-D000\-U}}\label{group___r_t_c1__module_gae43d8732a649441401c7d94c679f324b}
+Peripheral base address of a device allocated by the component. This constant can be used directly in P\-D\-D macros. \hypertarget{group___r_t_c1__module_ga734e8dc20145b950b4556deab3a14218}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-Set\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{R\-T\-C1\-\_\-\-Set\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{R\-T\-C1\-\_\-\-Set\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{R\-T\-C1\-\_\-\-Set\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-Set\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\-T\-C1\-\_\-\-Set\-Time\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___r_t_c1__module_ga734e8dc20145b950b4556deab3a14218}
+Set\-Time method of the component R\-T\-C1 is enabled (generated) 
+
+\subsection{Function Documentation}
+\hypertarget{group___r_t_c1__module_ga2f49cd5de22b91ec36641f0ac9161024}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-Enable@{R\-T\-C1\-\_\-\-Enable}}
+\index{R\-T\-C1\-\_\-\-Enable@{R\-T\-C1\-\_\-\-Enable}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Error} R\-T\-C1\-\_\-\-Enable (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$}]{Device\-Data\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c1__module_ga2f49cd5de22b91ec36641f0ac9161024}
+
+
+Enables the real-\/time clock module (Typically sets the module enable bit). All other H\-W settings are preserved. R\-T\-C module can be disabled by the \mbox{[}Disable\mbox{]} method and reinitialized by the \mbox{[}Init\mbox{]} method. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\-Data\-Ptr} & -\/ Pointer to device data structure pointer returned by \mbox{[}Init\mbox{]} method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Error code, possible codes\-: E\-R\-R\-\_\-\-O\-K -\/ O\-K 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{group___r_t_c1__module_gaeed73f4c93bfd44f15170c28028c81fb}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-Get\-Time@{R\-T\-C1\-\_\-\-Get\-Time}}
+\index{R\-T\-C1\-\_\-\-Get\-Time@{R\-T\-C1\-\_\-\-Get\-Time}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-Get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void R\-T\-C1\-\_\-\-Get\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$}]{Device\-Data\-Ptr, }
+\item[{{\bf L\-D\-D\-\_\-\-R\-T\-C\-\_\-\-T\-Time} $\ast$}]{Time\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c1__module_gaeed73f4c93bfd44f15170c28028c81fb}
+
+
+Returns actual time and date. Note\-: Fields not supported by H\-W are calculated in software. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\-Data\-Ptr} & -\/ Pointer to device data structure pointer returned by \mbox{[}Init\mbox{]} method. \\
+\hline
+{\em Time\-Ptr} & -\/ Pointer to the time structure to fill with current time. \\
+\hline
+\end{DoxyParams}
+\hypertarget{group___r_t_c1__module_ga844f34d73a2540c6cd99df66b247dd49}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-Init@{R\-T\-C1\-\_\-\-Init}}
+\index{R\-T\-C1\-\_\-\-Init@{R\-T\-C1\-\_\-\-Init}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ R\-T\-C1\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-User\-Data} $\ast$}]{User\-Data\-Ptr, }
+\item[{bool}]{Soft\-Init}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c1__module_ga844f34d73a2540c6cd99df66b247dd49}
+
+
+Initializes the device. There are two modes of initialization. 1) R\-T\-C device is N\-O\-T battery backed up. (Soft\-Init = F\-A\-L\-S\-E) All registers (interrupts, counters, clock routing …) that influence R\-T\-C behavior are initialized. Note\-: This initialization mode doesn't preserve time and date settings. 2) R\-T\-C device I\-S battery backed up. (Soft\-Init = T\-R\-U\-E). Only registers that are not backed up are initialized (Interrupt priority …). R\-T\-C device is running, time and date a preserved, R\-T\-C interrupts (events) are preserved too. Allocates memory for the device data structure. This method can be called only once. Before the second call of Init() the Deinit() must be called first. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em User\-Data\-Ptr} & -\/ Pointer to the user or R\-T\-O\-S specific data. This pointer will be passed as an event or callback parameter. \\
+\hline
+{\em Soft\-Init} & -\/ If set to \char`\"{}\mbox{[}true\mbox{]}\char`\"{} only registers that are not battery backup are initialized (E.\-g. Interrupt priority in interrupt controller … ) If set to \char`\"{}\mbox{[}false\mbox{]}\char`\"{} all registers are initialized. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Pointer to the dynamically allocated private structure or N\-U\-L\-L if there was an error. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{group___r_t_c1__module_ga91540e2cd845981f45f915884360d1fa}{\index{R\-T\-C1 module documentation@{R\-T\-C1 module documentation}!R\-T\-C1\-\_\-\-Set\-Time@{R\-T\-C1\-\_\-\-Set\-Time}}
+\index{R\-T\-C1\-\_\-\-Set\-Time@{R\-T\-C1\-\_\-\-Set\-Time}!RTC1 module documentation@{R\-T\-C1 module documentation}}
+\subsubsection[{R\-T\-C1\-\_\-\-Set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Error} R\-T\-C1\-\_\-\-Set\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$}]{Device\-Data\-Ptr, }
+\item[{{\bf L\-D\-D\-\_\-\-R\-T\-C\-\_\-\-T\-Time} $\ast$}]{Time\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___r_t_c1__module_ga91540e2cd845981f45f915884360d1fa}
+
+
+Sets new time and date. Note\-: All \hyperlink{struct_l_d_d___r_t_c___t_time}{L\-D\-D\-\_\-\-R\-T\-C\-\_\-\-T\-Time} structure members must be correctly filled in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\-Data\-Ptr} & -\/ Pointer to device data structure pointer returned by \mbox{[}Init\mbox{]} method. \\
+\hline
+{\em Time\-Ptr} & -\/ Pointer to the time structure with new time to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Error code, possible codes\-:
+\begin{DoxyItemize}
+\item E\-R\-R\-\_\-\-O\-K -\/ O\-K.
+\item E\-R\-R\-\_\-\-D\-I\-S\-A\-B\-L\-E\-D -\/ Component is disabled.
+\item E\-R\-R\-\_\-\-S\-P\-E\-E\-D -\/ Component does not work in the active clock configuration.
+\item E\-R\-R\-\_\-\-R\-A\-N\-G\-E -\/ Parameter out of range. 
+\end{DoxyItemize}
+\end{DoxyItemize}
+\end{DoxyReturn}

@@ -1,0 +1,114 @@
+\hypertarget{group___bit_io_ldd9__module}{\section{Bit\-Io\-Ldd9 module documentation}
+\label{group___bit_io_ldd9__module}\index{Bit\-Io\-Ldd9 module documentation@{Bit\-Io\-Ldd9 module documentation}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_bit_io_ldd9___t_device_data}{Bit\-Io\-Ldd9\-\_\-\-T\-Device\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___bit_io_ldd9__module_ga174ae74d2766cb109ec7ede1ae12bc6a}{Bit\-Io\-Ldd9\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~0x400\-F\-F080\-U
+\item 
+\#define \hyperlink{group___bit_io_ldd9__module_ga597e971eb96d12469036edb9403f1391}{Bit\-Io\-Ldd9\-\_\-\-Device\-Data}~((\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$)\hyperlink{group___p_e___types__module_gaa1c23d559daef5bcd3327ca83fb56f5a}{P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-Bit\-Io\-Ldd9\-\_\-\-I\-D))
+\item 
+\#define \hyperlink{group___bit_io_ldd9__module_ga91634d0b14500dcabcc1e62debba95d3}{Bit\-Io\-Ldd9\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___bit_io_ldd9__module_ga41ccac7e5854a7ab7243478e45c51774}{Bit\-Io\-Ldd9\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___bit_io_ldd9__module_ga3db97b478a16afb88894896684327e9b}{Bit\-Io\-Ldd9\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~F\-P\-T\-C\-\_\-\-B\-A\-S\-E\-\_\-\-P\-T\-R
+\item 
+\#define \hyperlink{group___bit_io_ldd9__module_ga99250acc1446452fa02e1b05763e518f}{Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~P\-O\-R\-T\-C\-\_\-\-B\-A\-S\-E\-\_\-\-P\-T\-R
+\item 
+\#define \hyperlink{group___bit_io_ldd9__module_ga00f12c8edf660f2448ef4619df850299}{Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-\_\-\-M\-A\-S\-K}~0x00010000\-U
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___bit_io_ldd9__module_ga14c5f1bba4476bfea732ee53bcbc3785}{typedef \hyperlink{struct_bit_io_ldd9___t_device_data}{Bit\-Io\-Ldd9\-\_\-\-T\-Device\-Data} $\ast$ {\bfseries Bit\-Io\-Ldd9\-\_\-\-T\-Device\-Data\-Ptr}}\label{group___bit_io_ldd9__module_ga14c5f1bba4476bfea732ee53bcbc3785}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___bit_io_ldd9__module_gad80d9c6b4e1521197f673e702034e626}{Bit\-Io\-Ldd9\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets interrupt priority, sets pin routing, sets timing, etc. If the \char`\"{}\-Enable
+    in init. code\char`\"{} is set to \char`\"{}yes\char`\"{} value then the device is also enabled(see the description of the Enable() method). In this case the Enable() method is not necessary and needn't to be generated. \end{DoxyCompactList}\item 
+bool \hyperlink{group___bit_io_ldd9__module_gaebd043c61a2e886b4b8961e0932f25be}{Bit\-Io\-Ldd9\-\_\-\-Get\-Val} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Returns the input/output value. If the direction is \mbox{[}input\mbox{]} then the input value of the pin is read and returned. If the direction is \mbox{[}output\mbox{]} then the last written value is read and returned (see $<$\-Safe mode$>$=\char`\"{}\char`\"{}$>$ property for limitations). This method cannot be disabled if direction is \mbox{[}input\mbox{]}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___bit_io_ldd9__module_ga597e971eb96d12469036edb9403f1391}{\index{Bit\-Io\-Ldd9 module documentation@{Bit\-Io\-Ldd9 module documentation}!Bit\-Io\-Ldd9\-\_\-\-Device\-Data@{Bit\-Io\-Ldd9\-\_\-\-Device\-Data}}
+\index{Bit\-Io\-Ldd9\-\_\-\-Device\-Data@{Bit\-Io\-Ldd9\-\_\-\-Device\-Data}!BitIoLdd9 module documentation@{Bit\-Io\-Ldd9 module documentation}}
+\subsubsection[{Bit\-Io\-Ldd9\-\_\-\-Device\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\#define Bit\-Io\-Ldd9\-\_\-\-Device\-Data~(({\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$){\bf P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-Bit\-Io\-Ldd9\-\_\-\-I\-D))}}\label{group___bit_io_ldd9__module_ga597e971eb96d12469036edb9403f1391}
+Device data structure pointer used when auto initialization property is enabled. This constant can be passed as a first parameter to all component's methods. \hypertarget{group___bit_io_ldd9__module_ga41ccac7e5854a7ab7243478e45c51774}{\index{Bit\-Io\-Ldd9 module documentation@{Bit\-Io\-Ldd9 module documentation}!Bit\-Io\-Ldd9\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Bit\-Io\-Ldd9\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Bit\-Io\-Ldd9\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Bit\-Io\-Ldd9\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!BitIoLdd9 module documentation@{Bit\-Io\-Ldd9 module documentation}}
+\subsubsection[{Bit\-Io\-Ldd9\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Bit\-Io\-Ldd9\-\_\-\-Get\-Val\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___bit_io_ldd9__module_ga41ccac7e5854a7ab7243478e45c51774}
+Get\-Val method of the component Bit\-Io\-Ldd9 is enabled (generated) \hypertarget{group___bit_io_ldd9__module_ga91634d0b14500dcabcc1e62debba95d3}{\index{Bit\-Io\-Ldd9 module documentation@{Bit\-Io\-Ldd9 module documentation}!Bit\-Io\-Ldd9\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Bit\-Io\-Ldd9\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Bit\-Io\-Ldd9\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Bit\-Io\-Ldd9\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!BitIoLdd9 module documentation@{Bit\-Io\-Ldd9 module documentation}}
+\subsubsection[{Bit\-Io\-Ldd9\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Bit\-Io\-Ldd9\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___bit_io_ldd9__module_ga91634d0b14500dcabcc1e62debba95d3}
+Init method of the component Bit\-Io\-Ldd9 is enabled (generated) \hypertarget{group___bit_io_ldd9__module_ga3db97b478a16afb88894896684327e9b}{\index{Bit\-Io\-Ldd9 module documentation@{Bit\-Io\-Ldd9 module documentation}!Bit\-Io\-Ldd9\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{Bit\-Io\-Ldd9\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}}
+\index{Bit\-Io\-Ldd9\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{Bit\-Io\-Ldd9\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}!BitIoLdd9 module documentation@{Bit\-Io\-Ldd9 module documentation}}
+\subsubsection[{Bit\-Io\-Ldd9\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define Bit\-Io\-Ldd9\-\_\-\-M\-O\-D\-U\-L\-E\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S~F\-P\-T\-C\-\_\-\-B\-A\-S\-E\-\_\-\-P\-T\-R}}\label{group___bit_io_ldd9__module_ga3db97b478a16afb88894896684327e9b}
+Name of macro used as the base address \hypertarget{group___bit_io_ldd9__module_ga00f12c8edf660f2448ef4619df850299}{\index{Bit\-Io\-Ldd9 module documentation@{Bit\-Io\-Ldd9 module documentation}!Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-\_\-\-M\-A\-S\-K@{Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-\_\-\-M\-A\-S\-K}}
+\index{Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-\_\-\-M\-A\-S\-K@{Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-\_\-\-M\-A\-S\-K}!BitIoLdd9 module documentation@{Bit\-Io\-Ldd9 module documentation}}
+\subsubsection[{Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-\_\-\-M\-A\-S\-K}]{\setlength{\rightskip}{0pt plus 5cm}\#define Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-\_\-\-M\-A\-S\-K~0x00010000\-U}}\label{group___bit_io_ldd9__module_ga00f12c8edf660f2448ef4619df850299}
+Mask of the allocated pin from the port \hypertarget{group___bit_io_ldd9__module_ga99250acc1446452fa02e1b05763e518f}{\index{Bit\-Io\-Ldd9 module documentation@{Bit\-Io\-Ldd9 module documentation}!Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}}
+\index{Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}!BitIoLdd9 module documentation@{Bit\-Io\-Ldd9 module documentation}}
+\subsubsection[{Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define Bit\-Io\-Ldd9\-\_\-\-P\-O\-R\-T\-C\-O\-N\-T\-R\-O\-L\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S~P\-O\-R\-T\-C\-\_\-\-B\-A\-S\-E\-\_\-\-P\-T\-R}}\label{group___bit_io_ldd9__module_ga99250acc1446452fa02e1b05763e518f}
+Name of macro used as the base address \hypertarget{group___bit_io_ldd9__module_ga174ae74d2766cb109ec7ede1ae12bc6a}{\index{Bit\-Io\-Ldd9 module documentation@{Bit\-Io\-Ldd9 module documentation}!Bit\-Io\-Ldd9\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{Bit\-Io\-Ldd9\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}}
+\index{Bit\-Io\-Ldd9\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{Bit\-Io\-Ldd9\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}!BitIoLdd9 module documentation@{Bit\-Io\-Ldd9 module documentation}}
+\subsubsection[{Bit\-Io\-Ldd9\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define Bit\-Io\-Ldd9\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S~0x400\-F\-F080\-U}}\label{group___bit_io_ldd9__module_ga174ae74d2766cb109ec7ede1ae12bc6a}
+Peripheral base address of a device allocated by the component. This constant can be used directly in P\-D\-D macros. 
+
+\subsection{Function Documentation}
+\hypertarget{group___bit_io_ldd9__module_gaebd043c61a2e886b4b8961e0932f25be}{\index{Bit\-Io\-Ldd9 module documentation@{Bit\-Io\-Ldd9 module documentation}!Bit\-Io\-Ldd9\-\_\-\-Get\-Val@{Bit\-Io\-Ldd9\-\_\-\-Get\-Val}}
+\index{Bit\-Io\-Ldd9\-\_\-\-Get\-Val@{Bit\-Io\-Ldd9\-\_\-\-Get\-Val}!BitIoLdd9 module documentation@{Bit\-Io\-Ldd9 module documentation}}
+\subsubsection[{Bit\-Io\-Ldd9\-\_\-\-Get\-Val}]{\setlength{\rightskip}{0pt plus 5cm}bool Bit\-Io\-Ldd9\-\_\-\-Get\-Val (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$}]{Device\-Data\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___bit_io_ldd9__module_gaebd043c61a2e886b4b8961e0932f25be}
+
+
+Returns the input/output value. If the direction is \mbox{[}input\mbox{]} then the input value of the pin is read and returned. If the direction is \mbox{[}output\mbox{]} then the last written value is read and returned (see $<$\-Safe mode$>$=\char`\"{}\char`\"{}$>$ property for limitations). This method cannot be disabled if direction is \mbox{[}input\mbox{]}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\-Data\-Ptr} & -\/ Device data structure pointer returned by $<$\-Init$>$ method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Input or output value. Possible values\-: $<$false$>$ -\/ logical \char`\"{}0\char`\"{} (Low level) $<$true$>$ -\/ logical \char`\"{}1\char`\"{} (High level) 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{group___bit_io_ldd9__module_gad80d9c6b4e1521197f673e702034e626}{\index{Bit\-Io\-Ldd9 module documentation@{Bit\-Io\-Ldd9 module documentation}!Bit\-Io\-Ldd9\-\_\-\-Init@{Bit\-Io\-Ldd9\-\_\-\-Init}}
+\index{Bit\-Io\-Ldd9\-\_\-\-Init@{Bit\-Io\-Ldd9\-\_\-\-Init}!BitIoLdd9 module documentation@{Bit\-Io\-Ldd9 module documentation}}
+\subsubsection[{Bit\-Io\-Ldd9\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ Bit\-Io\-Ldd9\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-User\-Data} $\ast$}]{User\-Data\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___bit_io_ldd9__module_gad80d9c6b4e1521197f673e702034e626}
+
+
+Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets interrupt priority, sets pin routing, sets timing, etc. If the \char`\"{}\-Enable
+    in init. code\char`\"{} is set to \char`\"{}yes\char`\"{} value then the device is also enabled(see the description of the Enable() method). In this case the Enable() method is not necessary and needn't to be generated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em User\-Data\-Ptr} & -\/ Pointer to the user or R\-T\-O\-S specific data. This pointer will be passed as an event or callback parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Pointer to the dynamically allocated private structure or N\-U\-L\-L if there was an error. 
+\end{DoxyItemize}
+\end{DoxyReturn}

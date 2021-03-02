@@ -1,0 +1,111 @@
+\hypertarget{group___w_a_i_t2__module}{\section{W\-A\-I\-T2 module documentation}
+\label{group___w_a_i_t2__module}\index{W\-A\-I\-T2 module documentation@{W\-A\-I\-T2 module documentation}}
+}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___w_a_i_t2__module_ga42be87062ba4bee82e74182008e6afbc}{\#define {\bfseries W\-A\-I\-T2\-\_\-\-I\-N\-S\-T\-R\-\_\-\-C\-L\-O\-C\-K\-\_\-\-H\-Z}~C\-P\-U\-\_\-\-C\-O\-R\-E\-\_\-\-C\-L\-K\-\_\-\-H\-Z /$\ast$ for Kinetis, use core clock as base for instruction execution $\ast$/}\label{group___w_a_i_t2__module_ga42be87062ba4bee82e74182008e6afbc}
+
+\item 
+\hypertarget{group___w_a_i_t2__module_gaf13a8ab79ece3a554abaaff60399e8c8}{\#define {\bfseries W\-A\-I\-T2\-\_\-\-Nof\-Cycles\-Ms}(ms, hz)~((ms)$\ast$((hz)/1000)) /$\ast$ calculates the needed cycles based on bus clock frequency $\ast$/}\label{group___w_a_i_t2__module_gaf13a8ab79ece3a554abaaff60399e8c8}
+
+\item 
+\hypertarget{group___w_a_i_t2__module_gaea93c12588315526fa7ebe7c305ea8f0}{\#define {\bfseries W\-A\-I\-T2\-\_\-\-Nof\-Cycles\-Us}(us, hz)~((us)$\ast$(((hz)/1000)/1000)) /$\ast$ calculates the needed cycles based on bus clock frequency $\ast$/}\label{group___w_a_i_t2__module_gaea93c12588315526fa7ebe7c305ea8f0}
+
+\item 
+\hypertarget{group___w_a_i_t2__module_gacbc1ee8c0a39d4fab8af0efd19fe798f}{\#define {\bfseries W\-A\-I\-T2\-\_\-\-Nof\-Cycles\-Ns}(ns, hz)~(((ns)$\ast$(((hz)/1000)/1000))/1000) /$\ast$ calculates the needed cycles based on bus clock frequency $\ast$/}\label{group___w_a_i_t2__module_gacbc1ee8c0a39d4fab8af0efd19fe798f}
+
+\item 
+\#define \hyperlink{group___w_a_i_t2__module_ga79daf93af3a325f56dfa4c24c325c03f}{W\-A\-I\-T2\-\_\-\-W\-A\-I\-T\-\_\-\-C}(cycles)
+\item 
+\#define {\bfseries W\-A\-I\-T2\-\_\-\-Waitus}(us)
+\item 
+\#define {\bfseries W\-A\-I\-T2\-\_\-\-Waitns}(ns)
+\item 
+\hypertarget{group___w_a_i_t2__module_gadcb672b21de6ee7a7239a4ec1372474b}{\#define {\bfseries W\-A\-I\-T2\-\_\-\-Wait\-O\-Sms}(ms)~W\-A\-I\-T2\-\_\-\-Waitms(ms) /$\ast$ no R\-T\-O\-S used, so use normal wait $\ast$/}\label{group___w_a_i_t2__module_gadcb672b21de6ee7a7239a4ec1372474b}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___w_a_i_t2__module_ga0d401ca6ca297b5b7a450deed0c42b78}{{\bfseries \-\_\-\-\_\-attribute\-\_\-\-\_\-} ((naked, no\-\_\-instrument\-\_\-function))}\label{group___w_a_i_t2__module_ga0d401ca6ca297b5b7a450deed0c42b78}
+
+\item 
+\hypertarget{group___w_a_i_t2__module_ga0b3ae724f3fe49461aeb652417583368}{void {\bfseries W\-A\-I\-T2\-\_\-\-Wait\-Cycles} (uint16\-\_\-t cycles)}\label{group___w_a_i_t2__module_ga0b3ae724f3fe49461aeb652417583368}
+
+\item 
+\hypertarget{group___w_a_i_t2__module_ga5519763aaeaee6e8b167520411235c92}{void {\bfseries W\-A\-I\-T2\-\_\-\-Wait\-Long\-Cycles} (uint32\-\_\-t cycles)}\label{group___w_a_i_t2__module_ga5519763aaeaee6e8b167520411235c92}
+
+\item 
+\hypertarget{group___w_a_i_t2__module_ga0ca6d6b6223491aaa5fca0ef97ecee27}{void {\bfseries W\-A\-I\-T2\-\_\-\-Waitms} (uint16\-\_\-t ms)}\label{group___w_a_i_t2__module_ga0ca6d6b6223491aaa5fca0ef97ecee27}
+
+\item 
+\hypertarget{group___w_a_i_t2__module_ga02e3940dac9ccd5ffc55a0ea68162a6b}{void {\bfseries W\-A\-I\-T2\-\_\-\-Init} (void)}\label{group___w_a_i_t2__module_ga02e3940dac9ccd5ffc55a0ea68162a6b}
+
+\item 
+\hypertarget{group___w_a_i_t2__module_ga1f7e715f7e7119d3b036a08c1635a3c3}{void {\bfseries W\-A\-I\-T2\-\_\-\-De\-Init} (void)}\label{group___w_a_i_t2__module_ga1f7e715f7e7119d3b036a08c1635a3c3}
+
+\item 
+\hypertarget{group___w_a_i_t2__module_ga6b9655eaa0aea0b7d727bf57dae98c52}{void {\bfseries W\-A\-I\-T2\-\_\-\-Wait10\-Cycles} (void)}\label{group___w_a_i_t2__module_ga6b9655eaa0aea0b7d727bf57dae98c52}
+
+\item 
+\hypertarget{group___w_a_i_t2__module_ga545ebe42a76d7f779ab3d58533827638}{void {\bfseries W\-A\-I\-T2\-\_\-\-Wait100\-Cycles} (void)}\label{group___w_a_i_t2__module_ga545ebe42a76d7f779ab3d58533827638}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___w_a_i_t2__module_ga79daf93af3a325f56dfa4c24c325c03f}{\index{W\-A\-I\-T2 module documentation@{W\-A\-I\-T2 module documentation}!W\-A\-I\-T2\-\_\-\-W\-A\-I\-T\-\_\-\-C@{W\-A\-I\-T2\-\_\-\-W\-A\-I\-T\-\_\-\-C}}
+\index{W\-A\-I\-T2\-\_\-\-W\-A\-I\-T\-\_\-\-C@{W\-A\-I\-T2\-\_\-\-W\-A\-I\-T\-\_\-\-C}!WAIT2 module documentation@{W\-A\-I\-T2 module documentation}}
+\subsubsection[{W\-A\-I\-T2\-\_\-\-W\-A\-I\-T\-\_\-\-C}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-A\-I\-T2\-\_\-\-W\-A\-I\-T\-\_\-\-C(
+\begin{DoxyParamCaption}
+\item[{}]{cycles}
+\end{DoxyParamCaption}
+)}}\label{group___w_a_i_t2__module_ga79daf93af3a325f56dfa4c24c325c03f}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+( (cycles)<=10 ? \(\backslash\)
+          WAIT2\_Wait10Cycles() \(\backslash\)
+        : WAIT2\_WaitCycles((uint16\_t)cycles) \(\backslash\)
+      )
+\end{DoxyCode}
+wait for some cycles \hypertarget{group___w_a_i_t2__module_ga395bbf074bbc2214cb866b60ee51a93d}{\index{W\-A\-I\-T2 module documentation@{W\-A\-I\-T2 module documentation}!W\-A\-I\-T2\-\_\-\-Waitns@{W\-A\-I\-T2\-\_\-\-Waitns}}
+\index{W\-A\-I\-T2\-\_\-\-Waitns@{W\-A\-I\-T2\-\_\-\-Waitns}!WAIT2 module documentation@{W\-A\-I\-T2 module documentation}}
+\subsubsection[{W\-A\-I\-T2\-\_\-\-Waitns}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-A\-I\-T2\-\_\-\-Waitns(
+\begin{DoxyParamCaption}
+\item[{}]{ns}
+\end{DoxyParamCaption}
+)}}\label{group___w_a_i_t2__module_ga395bbf074bbc2214cb866b60ee51a93d}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{comment}{/*lint -save -e(505,506,522) Constant value Boolean, Redundant left argument to comma. */}\(\backslash\)
+       (  ((WAIT2\_NofCyclesNs((ns), WAIT2\_INSTR\_CLOCK\_HZ)==0)||(ns)==0) ? \(\backslash\)
+          (\textcolor{keywordtype}{void})0 : \(\backslash\)
+          WAIT2\_Waitus((ns)/1000) \(\backslash\)
+          , (WAIT2\_NofCyclesNs((ns)%1000, WAIT2\_INSTR\_CLOCK\_HZ)==0) ? \(\backslash\)
+              (\textcolor{keywordtype}{void})0 : \(\backslash\)
+              WAIT2\_WAIT\_C(WAIT2\_NofCyclesNs(((ns)%1000), WAIT2\_INSTR\_CLOCK\_HZ)) \(\backslash\)
+       \textcolor{comment}{/*lint -restore */}\(\backslash\)
+       )
+\end{DoxyCode}
+\hypertarget{group___w_a_i_t2__module_ga42b1b78d02425ac522fcacd744e66d91}{\index{W\-A\-I\-T2 module documentation@{W\-A\-I\-T2 module documentation}!W\-A\-I\-T2\-\_\-\-Waitus@{W\-A\-I\-T2\-\_\-\-Waitus}}
+\index{W\-A\-I\-T2\-\_\-\-Waitus@{W\-A\-I\-T2\-\_\-\-Waitus}!WAIT2 module documentation@{W\-A\-I\-T2 module documentation}}
+\subsubsection[{W\-A\-I\-T2\-\_\-\-Waitus}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-A\-I\-T2\-\_\-\-Waitus(
+\begin{DoxyParamCaption}
+\item[{}]{us}
+\end{DoxyParamCaption}
+)}}\label{group___w_a_i_t2__module_ga42b1b78d02425ac522fcacd744e66d91}
+{\bfseries Value\-:}
+\begin{DoxyCode}
+\textcolor{comment}{/*lint -save -e(505,506,522) Constant value Boolean, Redundant left argument to comma. */}\(\backslash\)
+       (  ((WAIT2\_NofCyclesUs((us),WAIT2\_INSTR\_CLOCK\_HZ)==0)||(us)==0) ? \(\backslash\)
+          (\textcolor{keywordtype}{void})0 : \(\backslash\)
+          ( ((us)/1000)==0 ? (void)0 : WAIT2\_Waitms((uint16\_t)((us)/1000))) \(\backslash\)
+          , (WAIT2\_NofCyclesUs(((us)%1000), WAIT2\_INSTR\_CLOCK\_HZ)==0) ? (\textcolor{keywordtype}{void})0 : \(\backslash\)
+            WAIT2\_WAIT\_C(WAIT2\_NofCyclesUs(((us)%1000), WAIT2\_INSTR\_CLOCK\_HZ)) \(\backslash\)
+       \textcolor{comment}{/*lint -restore */}\(\backslash\)
+       )
+\end{DoxyCode}

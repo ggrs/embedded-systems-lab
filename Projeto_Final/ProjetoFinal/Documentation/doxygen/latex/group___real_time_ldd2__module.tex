@@ -1,0 +1,196 @@
+\hypertarget{group___real_time_ldd2__module}{\section{Real\-Time\-Ldd2 module documentation}
+\label{group___real_time_ldd2__module}\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_real_time_ldd2___t_device_data}{Real\-Time\-Ldd2\-\_\-\-T\-Device\-Data}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_gaf7beb45a4424df4da43f3b45c78a6652}{Real\-Time\-Ldd2\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}~0x4003\-A000\-U
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_ga368e4a6b140bc3df3e6e9fd64fc994ce}{Real\-Time\-Ldd2\-\_\-\-Device\-Data}~((\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$)\hyperlink{group___p_e___types__module_gaa1c23d559daef5bcd3327ca83fb56f5a}{P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-Real\-Time\-Ldd2\-\_\-\-I\-D))
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_gafe6afc8bcc1aef4a8d7dc6ecb2793431}{Real\-Time\-Ldd2\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_gaa65175b17bf9ee0d111e971783181cdb}{Real\-Time\-Ldd2\-\_\-\-Reset\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_ga3db29bed456a7f7b95a03acc4c6956ed}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_gaab7097d73e29dae25e5a1c2e283c1e2c}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\item 
+\#define \hyperlink{group___real_time_ldd2__module_ga1535acdd92817c52bf81591f3d41aeb0}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___real_time_ldd2__module_gad6879a5d776a6c4ad328e86e1c9ca809}{typedef \hyperlink{struct_real_time_ldd2___t_device_data}{Real\-Time\-Ldd2\-\_\-\-T\-Device\-Data} $\ast$ {\bfseries Real\-Time\-Ldd2\-\_\-\-T\-Device\-Data\-Ptr}}\label{group___real_time_ldd2__module_gad6879a5d776a6c4ad328e86e1c9ca809}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ \hyperlink{group___real_time_ldd2__module_ga0b24feecda4b259a58053e9a4672d2cd}{Real\-Time\-Ldd2\-\_\-\-Init} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets interrupt priority, sets pin routing, sets timing, etc. If the property \mbox{[}\char`\"{}\-Enable in init. code\char`\"{}\mbox{]} is set to \char`\"{}yes\char`\"{} value then the device is also enabled (see the description of the \mbox{[}Enable\mbox{]} method). In this case the \mbox{[}Enable\mbox{]} method is not necessary and needn't to be generated. This method can be called only once. Before the second call of Init the \mbox{[}Deinit\mbox{]} must be called first. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___real_time_ldd2__module_gae3be94a12612ec0614698cc7a3c5855a}{Real\-Time\-Ldd2\-\_\-\-Reset} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr)
+\begin{DoxyCompactList}\small\item\em This method resets software counter. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___real_time_ldd2__module_ga256d6a82db79299e421b0bac967ab2fb}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, uint16\-\_\-t $\ast$Time\-Ptr)
+\begin{DoxyCompactList}\small\item\em This method returns the time (as a 16-\/bit unsigned integer) in microseconds since the last Reset method call. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___real_time_ldd2__module_ga0ef362beecb2f27b82b32b4b8a28bfcd}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, uint16\-\_\-t $\ast$Time\-Ptr)
+\begin{DoxyCompactList}\small\item\em This method returns the time (as a 16-\/bit unsigned integer) in milliseconds since the last Reset method call. \end{DoxyCompactList}\item 
+\hyperlink{group___p_e___types__module_ga24c2b045fd04e79e85f261ce4df35588}{L\-D\-D\-\_\-\-T\-Error} \hyperlink{group___real_time_ldd2__module_ga4bb188fa300586aacb0fe28460d8b6a6}{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec} (\hyperlink{group___p_e___types__module_gac5cf1362f1f0e3a2ce71b1bf2276d091}{L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$Device\-Data\-Ptr, uint16\-\_\-t $\ast$Time\-Ptr)
+\begin{DoxyCompactList}\small\item\em This method returns the time (as a 16-\/bit unsigned integer) in seconds since the last Reset method call. \end{DoxyCompactList}\item 
+\hypertarget{group___real_time_ldd2__module_ga40969d1d760fbadc1be75a4bca6391b1}{void {\bfseries T\-U4\-\_\-\-On\-Counter\-Restart} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)}\label{group___real_time_ldd2__module_ga40969d1d760fbadc1be75a4bca6391b1}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{group___real_time_ldd2__module_ga368e4a6b140bc3df3e6e9fd64fc994ce}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Device\-Data@{Real\-Time\-Ldd2\-\_\-\-Device\-Data}}
+\index{Real\-Time\-Ldd2\-\_\-\-Device\-Data@{Real\-Time\-Ldd2\-\_\-\-Device\-Data}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Device\-Data}]{\setlength{\rightskip}{0pt plus 5cm}\#define Real\-Time\-Ldd2\-\_\-\-Device\-Data~(({\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$){\bf P\-E\-\_\-\-L\-D\-D\-\_\-\-Get\-Device\-Structure}(P\-E\-\_\-\-L\-D\-D\-\_\-\-C\-O\-M\-P\-O\-N\-E\-N\-T\-\_\-\-Real\-Time\-Ldd2\-\_\-\-I\-D))}}\label{group___real_time_ldd2__module_ga368e4a6b140bc3df3e6e9fd64fc994ce}
+Device data structure pointer used when auto initialization property is enabled. This constant can be passed as a first parameter to all component's methods. \hypertarget{group___real_time_ldd2__module_gaab7097d73e29dae25e5a1c2e283c1e2c}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___real_time_ldd2__module_gaab7097d73e29dae25e5a1c2e283c1e2c}
+Get\-Time\-M\-S method of the component Real\-Time\-Ldd2 is enabled (generated) \hypertarget{group___real_time_ldd2__module_ga1535acdd92817c52bf81591f3d41aeb0}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___real_time_ldd2__module_ga1535acdd92817c52bf81591f3d41aeb0}
+Get\-Time\-Sec method of the component Real\-Time\-Ldd2 is enabled (generated) \hypertarget{group___real_time_ldd2__module_ga3db29bed456a7f7b95a03acc4c6956ed}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___real_time_ldd2__module_ga3db29bed456a7f7b95a03acc4c6956ed}
+Get\-Time\-U\-S method of the component Real\-Time\-Ldd2 is enabled (generated) \hypertarget{group___real_time_ldd2__module_gafe6afc8bcc1aef4a8d7dc6ecb2793431}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Real\-Time\-Ldd2\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Real\-Time\-Ldd2\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Real\-Time\-Ldd2\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Real\-Time\-Ldd2\-\_\-\-Init\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___real_time_ldd2__module_gafe6afc8bcc1aef4a8d7dc6ecb2793431}
+Init method of the component Real\-Time\-Ldd2 is enabled (generated) \hypertarget{group___real_time_ldd2__module_gaf7beb45a4424df4da43f3b45c78a6652}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{Real\-Time\-Ldd2\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}}
+\index{Real\-Time\-Ldd2\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S@{Real\-Time\-Ldd2\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define Real\-Time\-Ldd2\-\_\-\-P\-R\-P\-H\-\_\-\-B\-A\-S\-E\-\_\-\-A\-D\-D\-R\-E\-S\-S~0x4003\-A000\-U}}\label{group___real_time_ldd2__module_gaf7beb45a4424df4da43f3b45c78a6652}
+Peripheral base address of a device allocated by the component. This constant can be used directly in P\-D\-D macros. \hypertarget{group___real_time_ldd2__module_gaa65175b17bf9ee0d111e971783181cdb}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Reset\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Real\-Time\-Ldd2\-\_\-\-Reset\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}
+\index{Real\-Time\-Ldd2\-\_\-\-Reset\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D@{Real\-Time\-Ldd2\-\_\-\-Reset\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Reset\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define Real\-Time\-Ldd2\-\_\-\-Reset\-\_\-\-M\-E\-T\-H\-O\-D\-\_\-\-E\-N\-A\-B\-L\-E\-D}}\label{group___real_time_ldd2__module_gaa65175b17bf9ee0d111e971783181cdb}
+Reset method of the component Real\-Time\-Ldd2 is enabled (generated) 
+
+\subsection{Function Documentation}
+\hypertarget{group___real_time_ldd2__module_ga0ef362beecb2f27b82b32b4b8a28bfcd}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S}}
+\index{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Error} Real\-Time\-Ldd2\-\_\-\-Get\-Time\-M\-S (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$}]{Device\-Data\-Ptr, }
+\item[{uint16\-\_\-t $\ast$}]{Time\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___real_time_ldd2__module_ga0ef362beecb2f27b82b32b4b8a28bfcd}
+
+
+This method returns the time (as a 16-\/bit unsigned integer) in milliseconds since the last Reset method call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\-Data\-Ptr} & -\/ Device data structure pointer returned by \mbox{[}Init\mbox{]} method. \\
+\hline
+{\em Time\-Ptr} & -\/ A pointer to the returned 16-\/bit value in milliseconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Error code, possible codes\-: E\-R\-R\-\_\-\-O\-K -\/ O\-K E\-R\-R\-\_\-\-S\-P\-E\-E\-D -\/ This device does not work in the active clock configuration E\-R\-R\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W -\/ Software counter overflow E\-R\-R\-\_\-\-M\-A\-T\-H -\/ Overflow during evaluation 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{group___real_time_ldd2__module_ga4bb188fa300586aacb0fe28460d8b6a6}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec}}
+\index{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Error} Real\-Time\-Ldd2\-\_\-\-Get\-Time\-Sec (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$}]{Device\-Data\-Ptr, }
+\item[{uint16\-\_\-t $\ast$}]{Time\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___real_time_ldd2__module_ga4bb188fa300586aacb0fe28460d8b6a6}
+
+
+This method returns the time (as a 16-\/bit unsigned integer) in seconds since the last Reset method call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\-Data\-Ptr} & -\/ Device data structure pointer returned by \mbox{[}Init\mbox{]} method. \\
+\hline
+{\em Time\-Ptr} & -\/ A pointer to the returned 16-\/bit value in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Error code, possible codes\-: E\-R\-R\-\_\-\-O\-K -\/ O\-K E\-R\-R\-\_\-\-S\-P\-E\-E\-D -\/ This device does not work in the active speed mode E\-R\-R\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W -\/ Software counter overflow E\-R\-R\-\_\-\-M\-A\-T\-H -\/ Overflow during evaluation 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{group___real_time_ldd2__module_ga256d6a82db79299e421b0bac967ab2fb}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S}}
+\index{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S@{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Error} Real\-Time\-Ldd2\-\_\-\-Get\-Time\-U\-S (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$}]{Device\-Data\-Ptr, }
+\item[{uint16\-\_\-t $\ast$}]{Time\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___real_time_ldd2__module_ga256d6a82db79299e421b0bac967ab2fb}
+
+
+This method returns the time (as a 16-\/bit unsigned integer) in microseconds since the last Reset method call. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\-Data\-Ptr} & -\/ Device data structure pointer returned by \mbox{[}Init\mbox{]} method. \\
+\hline
+{\em Time\-Ptr} & -\/ A pointer to the returned 16-\/bit value in microseconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Error code, possible codes\-: E\-R\-R\-\_\-\-O\-K -\/ O\-K E\-R\-R\-\_\-\-S\-P\-E\-E\-D -\/ This device does not work in the active clock configuration E\-R\-R\-\_\-\-O\-V\-E\-R\-F\-L\-O\-W -\/ Software counter overflow E\-R\-R\-\_\-\-M\-A\-T\-H -\/ Overflow during evaluation 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{group___real_time_ldd2__module_ga0b24feecda4b259a58053e9a4672d2cd}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Init@{Real\-Time\-Ldd2\-\_\-\-Init}}
+\index{Real\-Time\-Ldd2\-\_\-\-Init@{Real\-Time\-Ldd2\-\_\-\-Init}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Init}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$ Real\-Time\-Ldd2\-\_\-\-Init (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-User\-Data} $\ast$}]{User\-Data\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___real_time_ldd2__module_ga0b24feecda4b259a58053e9a4672d2cd}
+
+
+Initializes the device. Allocates memory for the device data structure, allocates interrupt vectors and sets interrupt priority, sets pin routing, sets timing, etc. If the property \mbox{[}\char`\"{}\-Enable in init. code\char`\"{}\mbox{]} is set to \char`\"{}yes\char`\"{} value then the device is also enabled (see the description of the \mbox{[}Enable\mbox{]} method). In this case the \mbox{[}Enable\mbox{]} method is not necessary and needn't to be generated. This method can be called only once. Before the second call of Init the \mbox{[}Deinit\mbox{]} must be called first. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em User\-Data\-Ptr} & -\/ Pointer to the user or R\-T\-O\-S specific data. This pointer will be passed as an event or callback parameter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Pointer to the dynamically allocated private structure or N\-U\-L\-L if there was an error. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{group___real_time_ldd2__module_gae3be94a12612ec0614698cc7a3c5855a}{\index{Real\-Time\-Ldd2 module documentation@{Real\-Time\-Ldd2 module documentation}!Real\-Time\-Ldd2\-\_\-\-Reset@{Real\-Time\-Ldd2\-\_\-\-Reset}}
+\index{Real\-Time\-Ldd2\-\_\-\-Reset@{Real\-Time\-Ldd2\-\_\-\-Reset}!RealTimeLdd2 module documentation@{Real\-Time\-Ldd2 module documentation}}
+\subsubsection[{Real\-Time\-Ldd2\-\_\-\-Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\-D\-D\-\_\-\-T\-Error} Real\-Time\-Ldd2\-\_\-\-Reset (
+\begin{DoxyParamCaption}
+\item[{{\bf L\-D\-D\-\_\-\-T\-Device\-Data} $\ast$}]{Device\-Data\-Ptr}
+\end{DoxyParamCaption}
+)}}\label{group___real_time_ldd2__module_gae3be94a12612ec0614698cc7a3c5855a}
+
+
+This method resets software counter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Device\-Data\-Ptr} & -\/ Device data structure pointer returned by \mbox{[}Init\mbox{]} method. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\begin{DoxyItemize}
+\item Error code, possible codes\-: E\-R\-R\-\_\-\-O\-K -\/ O\-K E\-R\-R\-\_\-\-S\-P\-E\-E\-D -\/ This device does not work in the active clock configuration 
+\end{DoxyItemize}
+\end{DoxyReturn}

@@ -1,0 +1,84 @@
+\hypertarget{_wifi_8h}{\section{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Wifi.h File Reference}
+\label{_wifi_8h}\index{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Wifi.\-h@{C\-:/\-Users/ea076/\-Desktop/194087/\-Workspace\-\_\-\-L\-A\-B3/\-Projeto\-Final/\-Generated\-\_\-\-Code/\-Wifi.\-h}}
+}
+
+
+This component \char`\"{}\-Asynchro\-Serial\char`\"{} implements an asynchronous serial communication. The component supports different settings of parity, word width, stop-\/bit and communication speed, user can select interrupt or polling handler. Communication speed can be changed also in runtime. The component requires one on-\/chip asynchronous serial channel.  
+
+
+{\ttfamily \#include \char`\"{}A\-Serial\-Ldd2.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Cpu.\-h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+union \hyperlink{union_wifi___t_error}{Wifi\-\_\-\-T\-Error}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___wifi__module_gaa93b0565928a3b2796b75bee689a96d1}{\#define {\bfseries \-\_\-\-\_\-\-B\-W\-User\-Type\-\_\-\-Wifi\-\_\-\-T\-Error}}\label{group___wifi__module_gaa93b0565928a3b2796b75bee689a96d1}
+
+\item 
+\hypertarget{group___wifi__module_ga9a72bd61af9477f08d94483386c022a2}{\#define {\bfseries \-\_\-\-\_\-\-B\-W\-User\-Type\-\_\-\-Wifi\-\_\-\-T\-Com\-Data}}\label{group___wifi__module_ga9a72bd61af9477f08d94483386c022a2}
+
+\item 
+\hypertarget{group___wifi__module_gaa3d2de131804952fafd1263625255e40}{\#define {\bfseries Wifi\-\_\-\-I\-N\-P\-\_\-\-B\-U\-F\-\_\-\-S\-I\-Z\-E}~0x0100\-U     /$\ast$ Length of the R\-X buffer $\ast$/}\label{group___wifi__module_gaa3d2de131804952fafd1263625255e40}
+
+\item 
+\hypertarget{group___wifi__module_ga7baaa1360b0c3b79ae3637940230e93d}{\#define {\bfseries Wifi\-\_\-\-O\-U\-T\-\_\-\-B\-U\-F\-\_\-\-S\-I\-Z\-E}~0x0100\-U     /$\ast$ Length of the T\-X buffer $\ast$/}\label{group___wifi__module_ga7baaa1360b0c3b79ae3637940230e93d}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___wifi__module_ga5ed03b79844dfa84b85add518c860d2f}{typedef byte {\bfseries Wifi\-\_\-\-T\-Com\-Data}}\label{group___wifi__module_ga5ed03b79844dfa84b85add518c860d2f}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___wifi__module_gaa5f6d50c32a7f5fe45fa12276ed94bf9}{byte {\bfseries Wifi\-\_\-\-Recv\-Char} (Wifi\-\_\-\-T\-Com\-Data $\ast$Chr)}\label{group___wifi__module_gaa5f6d50c32a7f5fe45fa12276ed94bf9}
+
+\item 
+\hypertarget{group___wifi__module_ga4f1333910672b8ff8b8d76b6c57df9dc}{byte {\bfseries Wifi\-\_\-\-Send\-Char} (Wifi\-\_\-\-T\-Com\-Data Chr)}\label{group___wifi__module_ga4f1333910672b8ff8b8d76b6c57df9dc}
+
+\item 
+\hypertarget{group___wifi__module_gabc214b66421221461346a9fcb35629b0}{byte {\bfseries Wifi\-\_\-\-Recv\-Block} (Wifi\-\_\-\-T\-Com\-Data $\ast$Ptr, word Size, word $\ast$Rcv)}\label{group___wifi__module_gabc214b66421221461346a9fcb35629b0}
+
+\item 
+\hypertarget{group___wifi__module_ga101cfb9a1f1aef952427b2cf8d258ecd}{byte {\bfseries Wifi\-\_\-\-Send\-Block} (Wifi\-\_\-\-T\-Com\-Data $\ast$Ptr, word Size, word $\ast$Snd)}\label{group___wifi__module_ga101cfb9a1f1aef952427b2cf8d258ecd}
+
+\item 
+\hypertarget{group___wifi__module_gaec8c0e3fe6338f12177bee604b0b8c05}{byte {\bfseries Wifi\-\_\-\-Clear\-Rx\-Buf} (void)}\label{group___wifi__module_gaec8c0e3fe6338f12177bee604b0b8c05}
+
+\item 
+\hypertarget{group___wifi__module_ga432e1b0d4beb0d6d736760a7593e36a8}{byte {\bfseries Wifi\-\_\-\-Clear\-Tx\-Buf} (void)}\label{group___wifi__module_ga432e1b0d4beb0d6d736760a7593e36a8}
+
+\item 
+\hypertarget{group___wifi__module_ga494555d44877053c0f46da0ba21995be}{word {\bfseries Wifi\-\_\-\-Get\-Chars\-In\-Rx\-Buf} (void)}\label{group___wifi__module_ga494555d44877053c0f46da0ba21995be}
+
+\item 
+\hypertarget{group___wifi__module_gadf7750d3ec25828fb5b0d2d4f9ea5ff1}{word {\bfseries Wifi\-\_\-\-Get\-Chars\-In\-Tx\-Buf} (void)}\label{group___wifi__module_gadf7750d3ec25828fb5b0d2d4f9ea5ff1}
+
+\item 
+\hypertarget{group___wifi__module_gaa445cc1280431eb6530c5aa904a181d8}{void {\bfseries Wifi\-\_\-\-Init} (void)}\label{group___wifi__module_gaa445cc1280431eb6530c5aa904a181d8}
+
+\item 
+\hypertarget{group___wifi__module_ga7a02cc6280b30d13707952d78f8e6c73}{void {\bfseries A\-Serial\-Ldd2\-\_\-\-On\-Block\-Received} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)}\label{group___wifi__module_ga7a02cc6280b30d13707952d78f8e6c73}
+
+\item 
+\hypertarget{group___wifi__module_ga723758484ee852a66a707036a9a38a92}{void {\bfseries A\-Serial\-Ldd2\-\_\-\-On\-Block\-Sent} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)}\label{group___wifi__module_ga723758484ee852a66a707036a9a38a92}
+
+\item 
+\hypertarget{group___wifi__module_ga145a063bdf852caee1c1b8adeb02fc77}{void {\bfseries A\-Serial\-Ldd2\-\_\-\-On\-Error} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)}\label{group___wifi__module_ga145a063bdf852caee1c1b8adeb02fc77}
+
+\item 
+\hypertarget{group___wifi__module_ga702765a2c9f1c0e914a6ca8484088ec5}{void {\bfseries A\-Serial\-Ldd2\-\_\-\-On\-Break} (\hyperlink{group___p_e___types__module_ga0b66a73f87238a782318aa0be7578e35}{L\-D\-D\-\_\-\-T\-User\-Data} $\ast$User\-Data\-Ptr)}\label{group___wifi__module_ga702765a2c9f1c0e914a6ca8484088ec5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This component \char`\"{}\-Asynchro\-Serial\char`\"{} implements an asynchronous serial communication. The component supports different settings of parity, word width, stop-\/bit and communication speed, user can select interrupt or polling handler. Communication speed can be changed also in runtime. The component requires one on-\/chip asynchronous serial channel. \begin{DoxyVersion}{Version}
+01.\-01 
+\end{DoxyVersion}
